@@ -19,14 +19,14 @@
       "subtitle": "Automatyzacja dla Przemysłu",
       "cta": "Poznaj Automatyzację",
       "ctaLink": "/pl/rozwiazania/",
-      "image": "/images/hero/hero-machines.jpg"
+      "image": "/images/hero/hero-machines.png"
     },
     "right": {
       "title": "Inteligentne Budynki",
       "subtitle": "Technologia dla Komfortowego Życia",
       "cta": "Odkryj Przyszłość",
       "ctaLink": "/pl/budynki/",
-      "image": "/images/hero/hero-buildings.jpg"
+      "image": "/images/hero/hero-buildings.png"
     }
   },
   "aboutSection": {
