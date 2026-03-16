@@ -10,8 +10,8 @@ const { lang } = Astro.props;
 const content = getContent(lang);
 const hero = content.hero;
 ---
-<section class="relative pt-16 lg:pt-20">
-  <div class="relative min-h-[70vh] lg:min-h-[75vh] flex flex-col lg:block overflow-hidden">
+<section class="relative min-h-screen pt-16 lg:pt-20">
+  <div class="relative min-h-[calc(100vh-5rem)] flex flex-col lg:block overflow-hidden">
     <!-- Left Panel - Intelligent Machines -->
     <div class="hero-panel-left relative group overflow-hidden min-h-[50vh] lg:min-h-full lg:absolute lg:inset-0 lg:w-full">
       <!-- Background image -->
@@ -19,7 +19,7 @@ const hero = content.hero;
         <img
           src={url(hero.left.image)}
           alt={hero.left.title}
-          class="w-full h-full object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+          class="w-full h-full object-contain object-center opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
           onerror="this.style.display='none'"
         />
       </div>
@@ -56,7 +56,7 @@ const hero = content.hero;
         <img
           src={url(hero.right.image)}
           alt={hero.right.title}
-          class="w-full h-full object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+          class="w-full h-full object-contain object-center opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
           onerror="this.style.display='none'"
         />
       </div>
