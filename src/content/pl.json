@@ -19,14 +19,14 @@
       "subtitle": "Automatyzacja dla Przemysłu",
       "cta": "Poznaj Automatyzację",
       "ctaLink": "/pl/rozwiazania/",
-      "image": "/images/hero/hero-machines.jpg"
+      "image": "/images/hero/hero-machines.png"
     },
     "right": {
       "title": "Inteligentne Budynki",
       "subtitle": "Technologia dla Komfortowego Życia",
       "cta": "Odkryj Przyszłość",
       "ctaLink": "/pl/budynki/",
-      "image": "/images/hero/hero-buildings.jpg"
+      "image": "/images/hero/hero-buildings.png"
     }
   },
   "aboutSection": {
@@ -95,8 +95,8 @@
         "category": "Przemysłowy",
         "shortDescription": "W pełni zautomatyzowany obiekt magazynowy ze zintegrowaną flotą AMR i inteligentnymi systemami zarządzania.",
         "fullDescription": "Najnowocześniejszy obiekt magazynowy wyposażony w w pełni zautomatyzowane systemy składowania i pobierania, flotę autonomicznych robotów mobilnych oraz zintegrowany system zarządzania magazynem. Projekt ten prezentuje naszą zdolność do dostarczania kompleksowych rozwiązań automatyzacji.",
-        "image": "/images/projects/modern-warehouse.jpg",
-        "gallery": ["/images/projects/modern-warehouse.jpg"],
+        "image": "/images/projects/modern-warehouse.png",
+        "gallery": ["/images/projects/modern-warehouse.png"],
         "specs": {
           "area": "5 000 m²",
           "year": "2025",
@@ -109,8 +109,8 @@
         "category": "Rezydencjalny",
         "shortDescription": "Premiumowa instalacja inteligentnego domu z pełną automatyzacją i zarządzaniem budynkiem.",
         "fullDescription": "Luksusowy projekt rezydencjalny obejmujący kompleksową automatyzację inteligentnego domu, w tym systemy oświetlenia, klimatyzacji, bezpieczeństwa, rozrywki i zarządzania energią. Wszystko kontrolowane przez intuicyjny interfejs.",
-        "image": "/images/projects/luxury-villa.jpg",
-        "gallery": ["/images/projects/luxury-villa.jpg"],
+        "image": "/images/projects/luxury-villa.png",
+        "gallery": ["/images/projects/luxury-villa.png"],
         "specs": {
           "area": "800 m²",
           "year": "2025",
@@ -123,8 +123,8 @@
         "category": "Komercyjny",
         "shortDescription": "Inteligentny system hotelowy z automatyczną obsługą gości i zarządzaniem energią.",
         "fullDescription": "Inteligentny system zarządzania hotelem zapewniający automatyczną obsługę gości, optymalizację energii, monitoring bezpieczeństwa i inteligentne sterowanie pokojami. Poprawiamy doświadczenie gości, jednocześnie redukując koszty operacyjne.",
-        "image": "/images/projects/business-hotel.jpg",
-        "gallery": ["/images/projects/business-hotel.jpg"],
+        "image": "/images/projects/business-hotel.png",
+        "gallery": ["/images/projects/business-hotel.png"],
         "specs": {
           "area": "12 000 m²",
           "year": "2024",
@@ -137,8 +137,8 @@
         "category": "Komercyjny",
         "shortDescription": "Inteligentna automatyka budynkowa dla nowoczesnego kompleksu biurowego.",
         "fullDescription": "Kompleksowy projekt automatyki budynkowej dla wielopiętrowego kompleksu biurowego, obejmujący inteligentne systemy HVAC, oświetlenia, kontroli dostępu i zarządzania przestrzenią roboczą, zaprojektowane dla maksymalnego komfortu i efektywności energetycznej.",
-        "image": "/images/projects/office-complex.jpg",
-        "gallery": ["/images/projects/office-complex.jpg"],
+        "image": "/images/projects/office-complex.png",
+        "gallery": ["/images/projects/office-complex.png"],
         "specs": {
           "area": "25 000 m²",
           "year": "2024",

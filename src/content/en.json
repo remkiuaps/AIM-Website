@@ -19,14 +19,14 @@
       "subtitle": "Automation for Industry",
       "cta": "Explore Automation",
       "ctaLink": "/en/solutions/",
-      "image": "/images/hero/hero-machines.jpg"
+      "image": "/images/hero/hero-machines.png"
     },
     "right": {
       "title": "Intelligent Buildings",
       "subtitle": "Technology for Premium Living",
       "cta": "Enter Your Future",
       "ctaLink": "/en/buildings/",
-      "image": "/images/hero/hero-buildings.jpg"
+      "image": "/images/hero/hero-buildings.png"
     }
   },
   "aboutSection": {
@@ -95,8 +95,8 @@
         "category": "Industrial",
         "shortDescription": "Fully automated warehouse facility with integrated AMR fleet and intelligent management systems.",
         "fullDescription": "A state-of-the-art warehouse facility featuring fully automated storage and retrieval systems, a fleet of autonomous mobile robots, and an integrated warehouse management system. This project showcases our ability to deliver end-to-end automation solutions.",
-        "image": "/images/projects/modern-warehouse.jpg",
-        "gallery": ["/images/projects/modern-warehouse.jpg"],
+        "image": "/images/projects/modern-warehouse.png",
+        "gallery": ["/images/projects/modern-warehouse.png"],
         "specs": {
           "area": "5,000 m²",
           "year": "2025",
@@ -109,8 +109,8 @@
         "category": "Residential",
         "shortDescription": "Premium smart home installation with full automation and intelligent building management.",
         "fullDescription": "A luxury residential project featuring comprehensive smart home automation including lighting, climate, security, entertainment, and energy management systems. All controlled through an intuitive interface.",
-        "image": "/images/projects/luxury-villa.jpg",
-        "gallery": ["/images/projects/luxury-villa.jpg"],
+        "image": "/images/projects/luxury-villa.png",
+        "gallery": ["/images/projects/luxury-villa.png"],
         "specs": {
           "area": "800 m²",
           "year": "2025",
@@ -123,8 +123,8 @@
         "category": "Commercial",
         "shortDescription": "Smart hotel system with automated guest services and energy management.",
         "fullDescription": "An intelligent hotel management system providing automated guest services, energy optimization, security surveillance, and smart room controls. Enhancing guest experience while reducing operational costs.",
-        "image": "/images/projects/business-hotel.jpg",
-        "gallery": ["/images/projects/business-hotel.jpg"],
+        "image": "/images/projects/business-hotel.png",
+        "gallery": ["/images/projects/business-hotel.png"],
         "specs": {
           "area": "12,000 m²",
           "year": "2024",
@@ -137,8 +137,8 @@
         "category": "Commercial",
         "shortDescription": "Intelligent building automation for a modern office complex.",
         "fullDescription": "A comprehensive building automation project for a multi-story office complex, featuring intelligent HVAC, lighting, access control, and workspace management systems designed for maximum comfort and energy efficiency.",
-        "image": "/images/projects/office-complex.jpg",
-        "gallery": ["/images/projects/office-complex.jpg"],
+        "image": "/images/projects/office-complex.png",
+        "gallery": ["/images/projects/office-complex.png"],
         "specs": {
           "area": "25,000 m²",
           "year": "2024",
