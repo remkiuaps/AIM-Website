@@ -3,6 +3,8 @@
 @theme {
   --color-brand-teal: #1a8a7a;
   --color-brand-green: #6abf4b;
+  --color-brand-blue: #2563eb;
+  --color-brand-blue-light: #3b82f6;
   --color-brand-dark: #0a0f1a;
   --color-brand-darker: #060b14;
   --color-brand-card: #111827;
@@ -42,6 +44,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .gradient-blue {
+    background: linear-gradient(135deg, var(--color-brand-blue) 0%, var(--color-brand-blue-light) 100%);
+  }
+
+  .gradient-blue-hover:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
   }
 
   .gradient-border {

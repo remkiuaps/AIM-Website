@@ -13,6 +13,8 @@ const content = getContent(lang);
 const solutions = content.solutions;
 const solutionsBase = url(lang === 'pl' ? '/pl/rozwiazania' : '/en/solutions');
 
+const blueIcons = new Set(['amr-agv', 'warehouse-automation']);
+
 const iconMap: Record<string, string> = {
   'amr-agv': '<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0H21M3.375 14.25h.008M21 14.25h-5.625m0 0V6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v7.5h10.875z" />',
   'warehouse-automation': '<path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />',
@@ -31,17 +33,26 @@ const iconMap: Record<string, string> = {
         <AnimateOnScroll animation="fade-up" delay={index * 100}>
           <a
             href={`${solutionsBase}/${solution.slug}/`}
-            class="group relative flex flex-col items-center p-6 lg:p-8 rounded-2xl bg-brand-card border border-white/5 hover:border-brand-teal/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-teal/10"
+            class:list={[
+              'group relative flex flex-col items-center p-6 lg:p-8 rounded-2xl bg-brand-card border border-white/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl',
+              blueIcons.has(solution.slug) ? 'hover:border-brand-blue/30 hover:shadow-brand-blue/10' : 'hover:border-brand-teal/30 hover:shadow-brand-teal/10',
+            ]}
           >
             <!-- Icon -->
-            <div class="flex items-center justify-center w-16 h-16 rounded-2xl gradient-brand mb-5 group-hover:shadow-lg group-hover:shadow-brand-green/20 transition-shadow duration-300">
+            <div class:list={[
+              'flex items-center justify-center w-16 h-16 rounded-2xl mb-5 group-hover:shadow-lg transition-shadow duration-300',
+              blueIcons.has(solution.slug) ? 'gradient-blue group-hover:shadow-brand-blue/20' : 'gradient-brand group-hover:shadow-brand-green/20',
+            ]}>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <Fragment set:html={iconMap[solution.slug] || iconMap['amr-agv']} />
               </svg>
             </div>
 
             <!-- Title -->
-            <h3 class="text-lg font-bold font-heading text-white text-center mb-2 group-hover:text-brand-green transition-colors">
+            <h3 class:list={[
+              'text-lg font-bold font-heading text-white text-center mb-2 transition-colors',
+              blueIcons.has(solution.slug) ? 'group-hover:text-brand-blue-light' : 'group-hover:text-brand-green',
+            ]}>
               {solution.title}
             </h3>
 
@@ -50,7 +61,10 @@ const iconMap: Record<string, string> = {
             </p>
 
             <!-- Hover glow -->
-            <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-brand-teal/5 to-brand-green/5 pointer-events-none"></div>
+            <div class:list={[
+              'absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none',
+              blueIcons.has(solution.slug) ? 'bg-gradient-to-br from-brand-blue/5 to-brand-blue-light/5' : 'bg-gradient-to-br from-brand-teal/5 to-brand-green/5',
+            ]}></div>
           </a>
         </AnimateOnScroll>
       ))}
