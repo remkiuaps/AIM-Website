@@ -16,7 +16,7 @@ const iconImages: Record<string, string> = {
   smart: '/images/icon-smart.png',
 };
 ---
-<section class="py-16 lg:py-20 bg-brand-dark relative overflow-hidden">
+<section id="about" class="py-16 lg:py-20 bg-brand-dark relative overflow-hidden">
   <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <AnimateOnScroll animation="fade-up">
       <!-- Logo -->
@@ -37,9 +37,9 @@ const iconImages: Record<string, string> = {
 
     <!-- Features row -->
     <AnimateOnScroll animation="fade-up" delay={150}>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0">
+      <div class="flex flex-col md:flex-row items-stretch justify-center gap-6">
         <!-- Industrial Automation -->
-        <div class="flex items-center gap-4 px-8 md:px-12">
+        <div class="flex items-center gap-4 px-6 py-5 bg-brand-card border border-white/5 rounded-xl">
           <img
             src={url(iconImages[about.features[0].icon] || iconImages.industrial)}
             alt={about.features[0].title}
@@ -55,12 +55,8 @@ const iconImages: Record<string, string> = {
           </div>
         </div>
 
-        <!-- Separator -->
-        <div class="hidden md:block w-px h-14 bg-white/10 shrink-0"></div>
-        <div class="md:hidden w-24 h-px bg-white/10"></div>
-
         <!-- Smart Infrastructure -->
-        <div class="flex items-center gap-4 px-8 md:px-12">
+        <div class="flex items-center gap-4 px-6 py-5 bg-brand-card border border-white/5 rounded-xl">
           <img
             src={url(iconImages[about.features[1].icon] || iconImages.smart)}
             alt={about.features[1].title}

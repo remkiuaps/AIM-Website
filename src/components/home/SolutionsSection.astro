@@ -15,9 +15,8 @@ const solutionsBase = url(lang === 'pl' ? '/pl/rozwiazania' : '/en/solutions');
 
 const blueIcons = new Set(['amr-agv', 'warehouse-automation']);
 
-// removed inline SVG map as we use actual images now
 ---
-<section class="py-20 lg:py-28 bg-brand-darker relative">
+<section id="solutions" class="py-20 lg:py-28 bg-brand-darker relative">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <AnimateOnScroll animation="fade-up">
       <SectionHeading title={solutions.sectionTitle} centered={false} />

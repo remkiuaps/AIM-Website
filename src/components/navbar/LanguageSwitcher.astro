@@ -10,7 +10,7 @@ interface Props {
 const { lang } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
-<div class="flex items-center gap-1 rounded-lg bg-white/5 p-1">
+<div role="group" aria-label="Language" class="flex items-center gap-1 rounded-lg bg-white/5 p-1">
   {Object.entries(languages).map(([code, label]) => (
     <a
       href={getAlternateUrl(currentPath, code as Lang)}
@@ -20,7 +20,7 @@ const currentPath = Astro.url.pathname;
           ? 'gradient-brand text-white'
           : 'text-gray-400 hover:text-white',
       ]}
-      aria-current={code === lang ? 'true' : undefined}
+      aria-current={code === lang ? 'page' : undefined}
       title={label}
     >
       {code.toUpperCase()}

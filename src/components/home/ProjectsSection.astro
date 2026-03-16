@@ -13,7 +13,7 @@ const content = getContent(lang);
 const projects = content.projects;
 const projectsBase = url(lang === 'pl' ? '/pl/projekty' : '/en/projects');
 ---
-<section class="py-20 lg:py-28 bg-brand-dark relative overflow-hidden">
+<section id="projects" class="py-20 lg:py-28 bg-brand-dark relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <AnimateOnScroll animation="fade-up">
       <SectionHeading title={projects.sectionTitle} centered={false} />
