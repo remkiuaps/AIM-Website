@@ -11,10 +11,10 @@ const content = getContent(lang);
 const hero = content.hero;
 ---
 <section class="relative min-h-screen pt-16 lg:pt-20">
-  <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-5rem)]">
+  <div class="relative min-h-[calc(100vh-5rem)] flex flex-col lg:block overflow-hidden">
     <!-- Left Panel - Intelligent Machines -->
-    <div class="relative group overflow-hidden min-h-[50vh] lg:min-h-full">
-      <!-- Background image placeholder -->
+    <div class="hero-panel-left relative group overflow-hidden min-h-[50vh] lg:min-h-full lg:absolute lg:inset-0 lg:w-full">
+      <!-- Background image -->
       <div class="absolute inset-0 bg-brand-dark">
         <img
           src={url(hero.left.image)}
@@ -28,7 +28,7 @@ const hero = content.hero;
       <div class="absolute inset-0 bg-gradient-to-r from-brand-darker/30 to-transparent"></div>
 
       <!-- Content -->
-      <div class="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12 xl:p-16 pb-12 lg:pb-16">
+      <div class="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12 xl:p-16 pb-12 lg:pb-16 lg:w-1/2">
         <div class="aos-element" data-aos="fade-up">
           <h1 class="text-4xl md:text-5xl xl:text-6xl font-bold font-heading text-white mb-3 leading-tight">
             {hero.left.title}
@@ -50,8 +50,8 @@ const hero = content.hero;
     </div>
 
     <!-- Right Panel - Intelligent Buildings -->
-    <div class="relative group overflow-hidden min-h-[50vh] lg:min-h-full">
-      <!-- Background image placeholder -->
+    <div class="hero-panel-right relative group overflow-hidden min-h-[50vh] lg:min-h-full lg:absolute lg:inset-0 lg:w-full">
+      <!-- Background image -->
       <div class="absolute inset-0 bg-brand-dark">
         <img
           src={url(hero.right.image)}
@@ -65,7 +65,7 @@ const hero = content.hero;
       <div class="absolute inset-0 bg-gradient-to-l from-brand-darker/30 to-transparent"></div>
 
       <!-- Content -->
-      <div class="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12 xl:p-16 pb-12 lg:pb-16">
+      <div class="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12 xl:p-16 pb-12 lg:pb-16 lg:ml-auto lg:w-1/2">
         <div class="aos-element" data-aos="fade-up" data-aos-delay="200">
           <h2 class="text-4xl md:text-5xl xl:text-6xl font-bold font-heading text-white mb-3 leading-tight">
             {hero.right.title}
@@ -85,13 +85,35 @@ const hero = content.hero;
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Golden diagonal line between panels -->
-  <div class="hidden lg:block absolute inset-0 z-20 pointer-events-none">
-    <div class="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-amber-500/60 via-amber-400/40 to-amber-500/60 origin-top" style="transform: rotate(3deg);"></div>
+    <!-- Golden diagonal line between panels -->
+    <div class="hidden lg:block absolute inset-0 z-20 pointer-events-none">
+      <svg class="w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hero-gold-gradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(245, 158, 11, 0.6)" />
+            <stop offset="50%" stop-color="rgba(251, 191, 36, 0.4)" />
+            <stop offset="100%" stop-color="rgba(245, 158, 11, 0.6)" />
+          </linearGradient>
+        </defs>
+        <line x1="53%" y1="0" x2="47%" y2="100%" stroke="url(#hero-gold-gradient)" stroke-width="2" />
+      </svg>
+    </div>
   </div>
 
   <!-- Diagonal separator -->
   <div class="absolute bottom-0 left-0 right-0 h-16 bg-brand-darker" style="clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 100%);"></div>
 </section>
+
+<style>
+  @media (min-width: 1024px) {
+    .hero-panel-left {
+      clip-path: polygon(0 0, 53% 0, 47% 100%, 0 100%);
+      z-index: 1;
+    }
+    .hero-panel-right {
+      clip-path: polygon(53% 0, 100% 0, 100% 100%, 47% 100%);
+      z-index: 1;
+    }
+  }
+</style>
