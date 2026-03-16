@@ -50,7 +50,7 @@
     "items": [
       {
         "slug": "amr-agv",
-        "icon": "/images/solutions/amr-agv.svg",
+        "icon": "/images/solutions/amr-agv-icon.png",
         "title": "AMR & AGV",
         "shortDescription": "Autonomiczne roboty mobilne i pojazdy sterowane automatycznie dla nowoczesnej logistyki.",
         "fullDescription": "Nasze rozwiązania AMR i AGV zapewniają najnowocześniejszą autonomiczną nawigację i obsługę materiałów w magazynach, fabrykach i centrach dystrybucyjnych. Te inteligentne pojazdy optymalizują przepływ pracy, redukują koszty operacyjne i zwiększają produktywność.",
@@ -59,7 +59,7 @@
       },
       {
         "slug": "warehouse-automation",
-        "icon": "/images/solutions/warehouse.svg",
+        "icon": "/images/solutions/warehouse-icon.png",
         "title": "Automatyzacja Magazynów",
         "shortDescription": "Kompleksowe rozwiązania automatyzacji magazynów dla maksymalnej wydajności.",
         "fullDescription": "Przekształć operacje magazynowe dzięki naszym kompleksowym rozwiązaniom automatyzacji. Od automatycznych systemów składowania i pobierania po sieci przenośników i systemy sortowania - projektujemy i wdrażamy rozwiązania, które radykalnie poprawiają wydajność.",
@@ -68,7 +68,7 @@
       },
       {
         "slug": "service-robots",
-        "icon": "/images/solutions/service-robots.svg",
+        "icon": "/images/solutions/service-robots-icon.png",
         "title": "Roboty Usługowe",
         "shortDescription": "Inteligentna robotyka usługowa dla zastosowań komercyjnych i hotelowych.",
         "fullDescription": "Nasze roboty usługowe wprowadzają automatyzację do środowisk obsługi klienta. Od robotów concierge hotelowych po roboty sprzątające i dostawcze - dostarczamy inteligentne rozwiązania, które poprawiają doświadczenie klienta.",
@@ -77,7 +77,7 @@
       },
       {
         "slug": "smart-security",
-        "icon": "/images/solutions/smart-security.svg",
+        "icon": "/images/solutions/smart-security-icon.png",
         "title": "Inteligentne Bezpieczeństwo",
         "shortDescription": "Kompleksowe rozwiązania bezpieczeństwa i monitoringu oparte na AI.",
         "fullDescription": "Chroń swoje zasoby dzięki naszym inteligentnym systemom bezpieczeństwa. Łącząc analitykę wideo opartą na AI, kontrolę dostępu i zintegrowane platformy monitoringu, nasze rozwiązania zapewniają kompleksowe bezpieczeństwo każdego obiektu.",

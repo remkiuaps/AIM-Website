@@ -50,7 +50,7 @@
     "items": [
       {
         "slug": "amr-agv",
-        "icon": "/images/solutions/amr-agv.svg",
+        "icon": "/images/solutions/amr-agv-icon.png",
         "title": "AMR & AGV",
         "shortDescription": "Autonomous mobile robots and automated guided vehicles for modern logistics.",
         "fullDescription": "Our AMR & AGV solutions provide cutting-edge autonomous navigation and material handling for warehouses, factories, and distribution centers. These intelligent vehicles optimize workflow, reduce operational costs, and increase productivity.",
@@ -59,7 +59,7 @@
       },
       {
         "slug": "warehouse-automation",
-        "icon": "/images/solutions/warehouse.svg",
+        "icon": "/images/solutions/warehouse-icon.png",
         "title": "Warehouse Automation",
         "shortDescription": "End-to-end warehouse automation solutions for maximum efficiency.",
         "fullDescription": "Transform your warehouse operations with our comprehensive automation solutions. From automated storage and retrieval systems to conveyor networks and sortation systems, we design and implement solutions that dramatically improve throughput.",
@@ -68,7 +68,7 @@
       },
       {
         "slug": "service-robots",
-        "icon": "/images/solutions/service-robots.svg",
+        "icon": "/images/solutions/service-robots-icon.png",
         "title": "Service Robots",
         "shortDescription": "Intelligent service robotics for commercial and hospitality applications.",
         "fullDescription": "Our service robots bring automation to customer-facing environments. From hotel concierge robots to commercial cleaning and delivery robots, we provide intelligent solutions that enhance customer experience.",
@@ -77,7 +77,7 @@
       },
       {
         "slug": "smart-security",
-        "icon": "/images/solutions/smart-security.svg",
+        "icon": "/images/solutions/smart-security-icon.png",
         "title": "Smart Security",
         "shortDescription": "Comprehensive AI-powered security and surveillance solutions.",
         "fullDescription": "Protect your assets with our intelligent security systems. Combining AI-powered video analytics, access control, and integrated monitoring platforms, our solutions provide comprehensive security for any facility.",
