@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "siteTitle": "AI Machine - Przyszłość Automatyzacji",
+    "siteDescription": "Firma inżynieryjna dostarczająca zaawansowane systemy automatyki i inteligentne budynki."
+  },
+  "nav": {
+    "homepage": "Strona Główna",
+    "buildings": "Budynki",
+    "supervision": "Nadzór",
+    "solutions": "Rozwiązania",
+    "projects": "Projekty",
+    "about": "O Nas",
+    "contact": "Kontakt",
+    "search": "Szukaj"
+  },
+  "hero": {
+    "left": {
+      "title": "Inteligentne Maszyny",
+      "subtitle": "Automatyzacja dla Przemysłu",
+      "cta": "Poznaj Automatyzację",
+      "ctaLink": "/pl/rozwiazania/",
+      "image": "/images/hero/hero-machines.jpg"
+    },
+    "right": {
+      "title": "Inteligentne Budynki",
+      "subtitle": "Technologia dla Komfortowego Życia",
+      "cta": "Odkryj Przyszłość",
+      "ctaLink": "/pl/budynki/",
+      "image": "/images/hero/hero-buildings.jpg"
+    }
+  },
+  "aboutSection": {
+    "companyName": "AI MACHINE",
+    "description": "Firma inżynieryjna dostarczająca zaawansowane systemy automatyki i inteligentne budynki.",
+    "features": [
+      {
+        "icon": "industrial",
+        "title": "Automatyka Przemysłowa",
+        "description": "Robotyka, AGV, Systemy Magazynowe"
+      },
+      {
+        "icon": "smart",
+        "title": "Inteligentna Infrastruktura",
+        "description": "Automatyka Domowa, VMS, Luxon"
+      }
+    ]
+  },
+  "solutions": {
+    "sectionTitle": "Nasze Rozwiązania",
+    "items": [
+      {
+        "slug": "amr-agv",
+        "icon": "/images/solutions/amr-agv.svg",
+        "title": "AMR & AGV",
+        "shortDescription": "Autonomiczne roboty mobilne i pojazdy sterowane automatycznie dla nowoczesnej logistyki.",
+        "fullDescription": "Nasze rozwiązania AMR i AGV zapewniają najnowocześniejszą autonomiczną nawigację i obsługę materiałów w magazynach, fabrykach i centrach dystrybucyjnych. Te inteligentne pojazdy optymalizują przepływ pracy, redukują koszty operacyjne i zwiększają produktywność.",
+        "features": ["Autonomiczna nawigacja", "Zarządzanie flotą", "Śledzenie w czasie rzeczywistym", "Unikanie kolizji"],
+        "image": "/images/solutions/amr-agv-detail.jpg"
+      },
+      {
+        "slug": "warehouse-automation",
+        "icon": "/images/solutions/warehouse.svg",
+        "title": "Automatyzacja Magazynów",
+        "shortDescription": "Kompleksowe rozwiązania automatyzacji magazynów dla maksymalnej wydajności.",
+        "fullDescription": "Przekształć operacje magazynowe dzięki naszym kompleksowym rozwiązaniom automatyzacji. Od automatycznych systemów składowania i pobierania po sieci przenośników i systemy sortowania - projektujemy i wdrażamy rozwiązania, które radykalnie poprawiają wydajność.",
+        "features": ["Systemy AS/RS", "Sieci przenośników", "Systemy sortowania", "Integracja WMS"],
+        "image": "/images/solutions/warehouse-detail.jpg"
+      },
+      {
+        "slug": "service-robots",
+        "icon": "/images/solutions/service-robots.svg",
+        "title": "Roboty Usługowe",
+        "shortDescription": "Inteligentna robotyka usługowa dla zastosowań komercyjnych i hotelowych.",
+        "fullDescription": "Nasze roboty usługowe wprowadzają automatyzację do środowisk obsługi klienta. Od robotów concierge hotelowych po roboty sprzątające i dostawcze - dostarczamy inteligentne rozwiązania, które poprawiają doświadczenie klienta.",
+        "features": ["Interakcja z klientem", "Autonomiczna dostawa", "Inteligentna nawigacja", "Praca 24/7"],
+        "image": "/images/solutions/service-robots-detail.jpg"
+      },
+      {
+        "slug": "smart-security",
+        "icon": "/images/solutions/smart-security.svg",
+        "title": "Inteligentne Bezpieczeństwo",
+        "shortDescription": "Kompleksowe rozwiązania bezpieczeństwa i monitoringu oparte na AI.",
+        "fullDescription": "Chroń swoje zasoby dzięki naszym inteligentnym systemom bezpieczeństwa. Łącząc analitykę wideo opartą na AI, kontrolę dostępu i zintegrowane platformy monitoringu, nasze rozwiązania zapewniają kompleksowe bezpieczeństwo każdego obiektu.",
+        "features": ["Analityka wideo AI", "Kontrola dostępu", "Wykrywanie włamań", "Zdalny monitoring"],
+        "image": "/images/solutions/smart-security-detail.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "sectionTitle": "Nasze Projekty",
+    "items": [
+      {
+        "slug": "modern-warehouse",
+        "title": "Nowoczesny Magazyn",
+        "category": "Przemysłowy",
+        "shortDescription": "W pełni zautomatyzowany obiekt magazynowy ze zintegrowaną flotą AMR i inteligentnymi systemami zarządzania.",
+        "fullDescription": "Najnowocześniejszy obiekt magazynowy wyposażony w w pełni zautomatyzowane systemy składowania i pobierania, flotę autonomicznych robotów mobilnych oraz zintegrowany system zarządzania magazynem. Projekt ten prezentuje naszą zdolność do dostarczania kompleksowych rozwiązań automatyzacji.",
+        "image": "/images/projects/modern-warehouse.jpg",
+        "gallery": ["/images/projects/modern-warehouse.jpg"],
+        "specs": {
+          "area": "5 000 m²",
+          "year": "2025",
+          "location": "Polska"
+        }
+      },
+      {
+        "slug": "luxury-villa",
+        "title": "Luksusowa Willa",
+        "category": "Rezydencjalny",
+        "shortDescription": "Premiumowa instalacja inteligentnego domu z pełną automatyzacją i zarządzaniem budynkiem.",
+        "fullDescription": "Luksusowy projekt rezydencjalny obejmujący kompleksową automatyzację inteligentnego domu, w tym systemy oświetlenia, klimatyzacji, bezpieczeństwa, rozrywki i zarządzania energią. Wszystko kontrolowane przez intuicyjny interfejs.",
+        "image": "/images/projects/luxury-villa.jpg",
+        "gallery": ["/images/projects/luxury-villa.jpg"],
+        "specs": {
+          "area": "800 m²",
+          "year": "2025",
+          "location": "Polska"
+        }
+      },
+      {
+        "slug": "business-hotel",
+        "title": "Hotel Biznesowy",
+        "category": "Komercyjny",
+        "shortDescription": "Inteligentny system hotelowy z automatyczną obsługą gości i zarządzaniem energią.",
+        "fullDescription": "Inteligentny system zarządzania hotelem zapewniający automatyczną obsługę gości, optymalizację energii, monitoring bezpieczeństwa i inteligentne sterowanie pokojami. Poprawiamy doświadczenie gości, jednocześnie redukując koszty operacyjne.",
+        "image": "/images/projects/business-hotel.jpg",
+        "gallery": ["/images/projects/business-hotel.jpg"],
+        "specs": {
+          "area": "12 000 m²",
+          "year": "2024",
+          "location": "Polska"
+        }
+      },
+      {
+        "slug": "office-complex",
+        "title": "Kompleks Biurowy",
+        "category": "Komercyjny",
+        "shortDescription": "Inteligentna automatyka budynkowa dla nowoczesnego kompleksu biurowego.",
+        "fullDescription": "Kompleksowy projekt automatyki budynkowej dla wielopiętrowego kompleksu biurowego, obejmujący inteligentne systemy HVAC, oświetlenia, kontroli dostępu i zarządzania przestrzenią roboczą, zaprojektowane dla maksymalnego komfortu i efektywności energetycznej.",
+        "image": "/images/projects/office-complex.jpg",
+        "gallery": ["/images/projects/office-complex.jpg"],
+        "specs": {
+          "area": "25 000 m²",
+          "year": "2024",
+          "location": "Polska"
+        }
+      }
+    ]
+  },
+  "buildings": {
+    "heroTitle": "Inteligentne Budynki",
+    "heroSubtitle": "Technologia dla Komfortowego Życia",
+    "heroImage": "/images/buildings/building-hero.jpg",
+    "description": "Projektujemy i wdrażamy rozwiązania inteligentnych budynków, które przekształcają zwykłe przestrzenie w inteligentne środowiska. Nasze systemy integrują oświetlenie, klimatyzację, bezpieczeństwo i rozrywkę w płynne zautomatyzowane doświadczenia.",
+    "sections": [
+      {
+        "title": "Automatyka Domowa",
+        "description": "Kompletne rozwiązania automatyki domowej obejmujące sterowanie oświetleniem, zarządzanie klimatem, automatyczne rolety i zintegrowane systemy rozrywki.",
+        "image": "/images/buildings/smart-home.jpg"
+      },
+      {
+        "title": "Systemy Zarządzania Budynkiem",
+        "description": "Scentralizowane platformy zarządzania budynkiem, które optymalizują zużycie energii, monitorują stan systemów i zapewniają kontrolę w czasie rzeczywistym.",
+        "image": "/images/buildings/bms.jpg"
+      },
+      {
+        "title": "Zarządzanie Energią",
+        "description": "Inteligentne systemy monitoringu i optymalizacji energii, które redukują koszty i wpływ na środowisko, zachowując poziom komfortu.",
+        "image": "/images/buildings/energy.jpg"
+      }
+    ]
+  },
+  "supervision": {
+    "heroTitle": "Usługi Nadzoru",
+    "heroSubtitle": "Ekspercki Nadzór nad Złożonymi Systemami",
+    "heroImage": "/images/supervision/supervision-hero.jpg",
+    "description": "Nasze usługi nadzoru zapewniają, że Twoje systemy automatyki i budynkowe działają z maksymalną wydajnością. Zapewniamy ekspercki nadzór, monitoring i konserwację.",
+    "sections": [
+      {
+        "title": "Monitoring Systemów",
+        "description": "Monitoring 24/7 wszystkich systemów automatyki z natychmiastowymi alertami i szybkim protokołem reakcji.",
+        "image": "/images/supervision/monitoring.jpg"
+      },
+      {
+        "title": "Konserwacja Prewencyjna",
+        "description": "Harmonogramy konserwacji zapobiegające przestojom i wydłużające żywotność systemów automatyki.",
+        "image": "/images/supervision/maintenance.jpg"
+      },
+      {
+        "title": "Wsparcie Techniczne",
+        "description": "Dedykowany zespół wsparcia technicznego dostępny 24/7, gotowy szybko i skutecznie rozwiązać każdy problem.",
+        "image": "/images/supervision/support.jpg"
+      }
+    ]
+  },
+  "aboutPage": {
+    "title": "O AI Machine",
+    "subtitle": "Przyszłość Automatyzacji",
+    "story": "AI Machine to firma inżynieryjna specjalizująca się w zaawansowanych systemach automatyki i inteligentnych budynkach. Łączymy najnowocześniejszą technologię z branżowym doświadczeniem, aby dostarczać rozwiązania transformujące sposób działania firm i budynków.",
+    "mission": "Naszą misją jest uczynienie inteligentnej automatyki dostępną i praktyczną dla każdej branży, tworząc inteligentniejsze, bardziej wydajne i bardziej zrównoważone środowiska.",
+    "values": [
+      {
+        "title": "Innowacja",
+        "description": "Nieustannie przesuwamy granice możliwości technologii automatyzacji."
+      },
+      {
+        "title": "Jakość",
+        "description": "Każde rozwiązanie, które dostarczamy, spełnia najwyższe standardy niezawodności i wydajności."
+      },
+      {
+        "title": "Partnerstwo",
+        "description": "Ściśle współpracujemy z klientami, aby zrozumieć ich unikalne potrzeby i dostarczyć dopasowane rozwiązania."
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Zbudujmy razem przyszłość",
+    "description": "Gotowy na transformację swojego biznesu dzięki inteligentnej automatyzacji? Skontaktuj się z naszym zespołem.",
+    "form": {
+      "name": "Imię i Nazwisko",
+      "email": "Adres Email",
+      "phone": "Numer Telefonu",
+      "company": "Nazwa Firmy",
+      "message": "Twoja Wiadomość",
+      "submit": "Wyślij Wiadomość"
+    },
+    "info": {
+      "address": "ul. Przykładowa 1, 00-001 Warszawa",
+      "phone": "+48 123 456 789",
+      "email": "kontakt@aimachine.pl"
+    }
+  },
+  "footer": {
+    "ctaTitle": "Zbuduj Przyszłość z",
+    "ctaBrand": "AI MACHINE",
+    "ctaButton": "Kontakt",
+    "columns": [
+      {
+        "title": "Firma",
+        "links": [
+          { "label": "O Nas", "href": "/pl/o-nas/" },
+          { "label": "Nasze Projekty", "href": "/pl/projekty/" },
+          { "label": "Kontakt", "href": "/pl/kontakt/" }
+        ]
+      },
+      {
+        "title": "Rozwiązania",
+        "links": [
+          { "label": "AMR & AGV", "href": "/pl/rozwiazania/amr-agv/" },
+          { "label": "Automatyzacja Magazynów", "href": "/pl/rozwiazania/warehouse-automation/" },
+          { "label": "Roboty Usługowe", "href": "/pl/rozwiazania/service-robots/" },
+          { "label": "Inteligentne Bezpieczeństwo", "href": "/pl/rozwiazania/smart-security/" }
+        ]
+      },
+      {
+        "title": "Usługi",
+        "links": [
+          { "label": "Budynki", "href": "/pl/budynki/" },
+          { "label": "Nadzór", "href": "/pl/nadzor/" }
+        ]
+      },
+      {
+        "title": "Partnerzy",
+        "links": [
+          { "label": "Zostań Partnerem", "href": "/pl/kontakt/" },
+          { "label": "Dla Klientów", "href": "/pl/kontakt/" }
+        ]
+      }
+    ],
+    "social": {
+      "facebook": "https://facebook.com/aimachine",
+      "twitter": "https://x.com/aimachine",
+      "instagram": "https://instagram.com/aimachine",
+      "youtube": "https://youtube.com/@aimachine"
+    },
+    "copyright": "© 2026 AI Machine. Wszelkie prawa zastrzeżone."
+  }
+}

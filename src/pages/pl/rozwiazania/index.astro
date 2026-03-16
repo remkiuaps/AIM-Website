@@ -1,0 +1,16 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import PageHero from '../../../components/shared/PageHero.astro';
+import SolutionsSection from '../../../components/home/SolutionsSection.astro';
+import { getContent } from '../../../i18n/utils';
+
+const lang = 'pl' as const;
+const content = getContent(lang);
+---
+<PageLayout lang={lang} title={`${content.solutions.sectionTitle} - AI Machine`}>
+  <PageHero
+    title={content.solutions.sectionTitle}
+    subtitle="Dostarczamy zaawansowane rozwiązania automatyzacji dla przemysłu i budynków."
+  />
+  <SolutionsSection lang={lang} />
+</PageLayout>

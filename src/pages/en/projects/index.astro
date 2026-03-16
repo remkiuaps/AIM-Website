@@ -1,0 +1,16 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import PageHero from '../../../components/shared/PageHero.astro';
+import ProjectsSection from '../../../components/home/ProjectsSection.astro';
+import { getContent } from '../../../i18n/utils';
+
+const lang = 'en' as const;
+const content = getContent(lang);
+---
+<PageLayout lang={lang} title={`${content.projects.sectionTitle} - AI Machine`}>
+  <PageHero
+    title={content.projects.sectionTitle}
+    subtitle="Our implementations in automation and intelligent buildings."
+  />
+  <ProjectsSection lang={lang} />
+</PageLayout>

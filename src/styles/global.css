@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-teal: #1a8a7a;
+  --color-brand-green: #6abf4b;
+  --color-brand-dark: #0a0f1a;
+  --color-brand-darker: #060b14;
+  --color-brand-card: #111827;
+  --color-brand-card-hover: #1a2332;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-brand-darker);
+    color: #f9fafb;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .gradient-brand {
+    background: linear-gradient(135deg, var(--color-brand-teal) 0%, var(--color-brand-green) 100%);
+  }
+
+  .gradient-brand-hover:hover {
+    background: linear-gradient(135deg, #15756a 0%, #5aaf3b 100%);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-brand-teal) 0%, var(--color-brand-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-border {
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--color-brand-teal), var(--color-brand-green));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+  }
+}
+
+/* Scroll Animations */
+.aos-element {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.aos-element[data-aos="fade-up"] {
+  transform: translateY(40px);
+}
+
+.aos-element[data-aos="fade-down"] {
+  transform: translateY(-40px);
+}
+
+.aos-element[data-aos="fade-left"] {
+  transform: translateX(-40px);
+}
+
+.aos-element[data-aos="fade-right"] {
+  transform: translateX(40px);
+}
+
+.aos-element[data-aos="fade-in"] {
+  transform: none;
+}
+
+.aos-element[data-aos="zoom-in"] {
+  transform: scale(0.9);
+}
+
+.aos-element.aos-animate {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}

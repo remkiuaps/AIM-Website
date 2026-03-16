@@ -1,0 +1,15 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import HeroSection from '../../components/home/HeroSection.astro';
+import AboutSection from '../../components/home/AboutSection.astro';
+import SolutionsSection from '../../components/home/SolutionsSection.astro';
+import ProjectsSection from '../../components/home/ProjectsSection.astro';
+
+const lang = 'en' as const;
+---
+<PageLayout lang={lang}>
+  <HeroSection lang={lang} />
+  <AboutSection lang={lang} />
+  <SolutionsSection lang={lang} />
+  <ProjectsSection lang={lang} />
+</PageLayout>

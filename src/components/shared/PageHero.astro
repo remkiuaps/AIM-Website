@@ -1,0 +1,37 @@
+---
+import { url } from '../../i18n/utils';
+
+interface Props {
+  title: string;
+  subtitle: string;
+  image?: string;
+}
+
+const { title, subtitle, image } = Astro.props;
+---
+<section class="relative pt-20 lg:pt-24 pb-16 lg:pb-24 min-h-[50vh] flex items-end overflow-hidden">
+  <!-- Background -->
+  <div class="absolute inset-0 bg-brand-dark">
+    {image && (
+      <img
+        src={url(image)}
+        alt={title}
+        class="w-full h-full object-cover opacity-30"
+        onerror="this.style.display='none'"
+      />
+    )}
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/60 to-brand-darker/30"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="aos-element" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4">
+        {title}
+      </h1>
+      <p class="text-xl text-gray-300 max-w-2xl">
+        {subtitle}
+      </p>
+    </div>
+  </div>
+</section>

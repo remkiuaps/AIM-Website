@@ -1,0 +1,117 @@
+---
+import type { Lang } from '../../i18n/config';
+import { rawNavLinks } from '../../i18n/config';
+import { getContent, getContactUrl, url } from '../../i18n/utils';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const content = getContent(lang);
+const links = rawNavLinks[lang].map(l => ({ ...l, href: url(l.href) }));
+const contactUrl = getContactUrl(lang);
+const currentPath = Astro.url.pathname;
+const homeUrl = url(`/${lang}/`);
+---
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brand-darker/80 backdrop-blur-md border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <!-- Logo -->
+      <a href={homeUrl} class="flex items-center gap-3 shrink-0">
+        <img src={url('/images/logo.png')} alt="AI Machine" class="h-10 lg:h-12 w-auto" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center gap-1">
+        {links.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              'px-3 xl:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200',
+              currentPath === link.href || (link.href !== homeUrl && currentPath.startsWith(link.href))
+                ? 'text-brand-green'
+                : 'text-gray-300 hover:text-white hover:bg-white/5',
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- Right side -->
+      <div class="flex items-center gap-3">
+        <LanguageSwitcher lang={lang} />
+
+        <!-- Search icon -->
+        <button class="hidden lg:flex items-center justify-center w-9 h-9 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors" aria-label={content.nav.search}>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+
+        <!-- Contact CTA -->
+        <a href={contactUrl} class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-lg gradient-brand gradient-brand-hover transition-all duration-200 hover:shadow-lg hover:shadow-brand-green/20">
+          {content.nav.contact}
+        </a>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors" aria-label="Menu" aria-expanded="false">
+          <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-brand-darker/95 backdrop-blur-md">
+    <div class="px-4 py-4 space-y-1">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            'block px-4 py-3 rounded-lg text-sm font-medium transition-colors',
+            currentPath === link.href || (link.href !== homeUrl && currentPath.startsWith(link.href))
+              ? 'text-brand-green bg-white/5'
+              : 'text-gray-300 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a href={contactUrl} class="block px-4 py-3 mt-2 text-sm font-semibold text-white text-center rounded-lg gradient-brand">
+        {content.nav.contact}
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden');
+    iconOpen?.classList.toggle('hidden');
+    iconClose?.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  });
+
+  menu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      iconOpen?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+      btn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>

@@ -1,0 +1,25 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Navbar from '../components/navbar/Navbar.astro';
+import Footer from '../components/footer/Footer.astro';
+import { getContent } from '../i18n/utils';
+import type { Lang } from '../i18n/config';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+}
+
+const { lang, title, description } = Astro.props;
+const content = getContent(lang);
+const pageTitle = title || content.meta.siteTitle;
+const pageDescription = description || content.meta.siteDescription;
+---
+<BaseLayout lang={lang} title={pageTitle} description={pageDescription}>
+  <Navbar lang={lang} />
+  <main>
+    <slot />
+  </main>
+  <Footer lang={lang} />
+</BaseLayout>

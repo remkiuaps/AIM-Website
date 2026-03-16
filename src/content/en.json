@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "siteTitle": "AI Machine - The Future Of Automation",
+    "siteDescription": "Engineering company delivering advanced automation systems and intelligent buildings."
+  },
+  "nav": {
+    "homepage": "Homepage",
+    "buildings": "Buildings",
+    "supervision": "Supervision",
+    "solutions": "Solutions",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact Us",
+    "search": "Search"
+  },
+  "hero": {
+    "left": {
+      "title": "Intelligent Machines",
+      "subtitle": "Automation for Industry",
+      "cta": "Explore Automation",
+      "ctaLink": "/en/solutions/",
+      "image": "/images/hero/hero-machines.jpg"
+    },
+    "right": {
+      "title": "Intelligent Buildings",
+      "subtitle": "Technology for Premium Living",
+      "cta": "Enter Your Future",
+      "ctaLink": "/en/buildings/",
+      "image": "/images/hero/hero-buildings.jpg"
+    }
+  },
+  "aboutSection": {
+    "companyName": "AI MACHINE",
+    "description": "Engineering company delivering advanced automation systems and intelligent buildings.",
+    "features": [
+      {
+        "icon": "industrial",
+        "title": "Industrial Automation",
+        "description": "Robotics, AGVs, Warehouse Systems"
+      },
+      {
+        "icon": "smart",
+        "title": "Smart Infrastructure",
+        "description": "Home Automation, VMS, Luxon"
+      }
+    ]
+  },
+  "solutions": {
+    "sectionTitle": "Our Solutions",
+    "items": [
+      {
+        "slug": "amr-agv",
+        "icon": "/images/solutions/amr-agv.svg",
+        "title": "AMR & AGV",
+        "shortDescription": "Autonomous mobile robots and automated guided vehicles for modern logistics.",
+        "fullDescription": "Our AMR & AGV solutions provide cutting-edge autonomous navigation and material handling for warehouses, factories, and distribution centers. These intelligent vehicles optimize workflow, reduce operational costs, and increase productivity.",
+        "features": ["Autonomous navigation", "Fleet management", "Real-time tracking", "Collision avoidance"],
+        "image": "/images/solutions/amr-agv-detail.jpg"
+      },
+      {
+        "slug": "warehouse-automation",
+        "icon": "/images/solutions/warehouse.svg",
+        "title": "Warehouse Automation",
+        "shortDescription": "End-to-end warehouse automation solutions for maximum efficiency.",
+        "fullDescription": "Transform your warehouse operations with our comprehensive automation solutions. From automated storage and retrieval systems to conveyor networks and sortation systems, we design and implement solutions that dramatically improve throughput.",
+        "features": ["AS/RS Systems", "Conveyor networks", "Sortation systems", "WMS Integration"],
+        "image": "/images/solutions/warehouse-detail.jpg"
+      },
+      {
+        "slug": "service-robots",
+        "icon": "/images/solutions/service-robots.svg",
+        "title": "Service Robots",
+        "shortDescription": "Intelligent service robotics for commercial and hospitality applications.",
+        "fullDescription": "Our service robots bring automation to customer-facing environments. From hotel concierge robots to commercial cleaning and delivery robots, we provide intelligent solutions that enhance customer experience.",
+        "features": ["Customer interaction", "Autonomous delivery", "Intelligent navigation", "24/7 operation"],
+        "image": "/images/solutions/service-robots-detail.jpg"
+      },
+      {
+        "slug": "smart-security",
+        "icon": "/images/solutions/smart-security.svg",
+        "title": "Smart Security",
+        "shortDescription": "Comprehensive AI-powered security and surveillance solutions.",
+        "fullDescription": "Protect your assets with our intelligent security systems. Combining AI-powered video analytics, access control, and integrated monitoring platforms, our solutions provide comprehensive security for any facility.",
+        "features": ["AI video analytics", "Access control", "Intrusion detection", "Remote monitoring"],
+        "image": "/images/solutions/smart-security-detail.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "sectionTitle": "Our Projects",
+    "items": [
+      {
+        "slug": "modern-warehouse",
+        "title": "Modern Warehouse",
+        "category": "Industrial",
+        "shortDescription": "Fully automated warehouse facility with integrated AMR fleet and intelligent management systems.",
+        "fullDescription": "A state-of-the-art warehouse facility featuring fully automated storage and retrieval systems, a fleet of autonomous mobile robots, and an integrated warehouse management system. This project showcases our ability to deliver end-to-end automation solutions.",
+        "image": "/images/projects/modern-warehouse.jpg",
+        "gallery": ["/images/projects/modern-warehouse.jpg"],
+        "specs": {
+          "area": "5,000 m²",
+          "year": "2025",
+          "location": "Poland"
+        }
+      },
+      {
+        "slug": "luxury-villa",
+        "title": "Luxury Villa",
+        "category": "Residential",
+        "shortDescription": "Premium smart home installation with full automation and intelligent building management.",
+        "fullDescription": "A luxury residential project featuring comprehensive smart home automation including lighting, climate, security, entertainment, and energy management systems. All controlled through an intuitive interface.",
+        "image": "/images/projects/luxury-villa.jpg",
+        "gallery": ["/images/projects/luxury-villa.jpg"],
+        "specs": {
+          "area": "800 m²",
+          "year": "2025",
+          "location": "Poland"
+        }
+      },
+      {
+        "slug": "business-hotel",
+        "title": "Business Hotel",
+        "category": "Commercial",
+        "shortDescription": "Smart hotel system with automated guest services and energy management.",
+        "fullDescription": "An intelligent hotel management system providing automated guest services, energy optimization, security surveillance, and smart room controls. Enhancing guest experience while reducing operational costs.",
+        "image": "/images/projects/business-hotel.jpg",
+        "gallery": ["/images/projects/business-hotel.jpg"],
+        "specs": {
+          "area": "12,000 m²",
+          "year": "2024",
+          "location": "Poland"
+        }
+      },
+      {
+        "slug": "office-complex",
+        "title": "Office Complex",
+        "category": "Commercial",
+        "shortDescription": "Intelligent building automation for a modern office complex.",
+        "fullDescription": "A comprehensive building automation project for a multi-story office complex, featuring intelligent HVAC, lighting, access control, and workspace management systems designed for maximum comfort and energy efficiency.",
+        "image": "/images/projects/office-complex.jpg",
+        "gallery": ["/images/projects/office-complex.jpg"],
+        "specs": {
+          "area": "25,000 m²",
+          "year": "2024",
+          "location": "Poland"
+        }
+      }
+    ]
+  },
+  "buildings": {
+    "heroTitle": "Intelligent Buildings",
+    "heroSubtitle": "Technology for Premium Living",
+    "heroImage": "/images/buildings/building-hero.jpg",
+    "description": "We design and implement smart building solutions that transform ordinary spaces into intelligent environments. Our systems integrate lighting, climate, security, and entertainment into seamless automated experiences.",
+    "sections": [
+      {
+        "title": "Smart Home Automation",
+        "description": "Complete home automation solutions including lighting control, climate management, automated blinds, and integrated entertainment systems.",
+        "image": "/images/buildings/smart-home.jpg"
+      },
+      {
+        "title": "Building Management Systems",
+        "description": "Centralized building management platforms that optimize energy usage, monitor systems health, and provide real-time control over all building systems.",
+        "image": "/images/buildings/bms.jpg"
+      },
+      {
+        "title": "Energy Management",
+        "description": "Intelligent energy monitoring and optimization systems that reduce costs and environmental impact while maintaining comfort levels.",
+        "image": "/images/buildings/energy.jpg"
+      }
+    ]
+  },
+  "supervision": {
+    "heroTitle": "Supervision Services",
+    "heroSubtitle": "Expert Oversight for Complex Systems",
+    "heroImage": "/images/supervision/supervision-hero.jpg",
+    "description": "Our supervision services ensure that your automation and building systems operate at peak performance. We provide expert oversight, monitoring, and maintenance to keep your systems running smoothly.",
+    "sections": [
+      {
+        "title": "System Monitoring",
+        "description": "24/7 real-time monitoring of all automated systems with instant alerts and rapid response protocols.",
+        "image": "/images/supervision/monitoring.jpg"
+      },
+      {
+        "title": "Preventive Maintenance",
+        "description": "Scheduled maintenance programs that prevent downtime and extend the lifespan of your automation systems.",
+        "image": "/images/supervision/maintenance.jpg"
+      },
+      {
+        "title": "Technical Support",
+        "description": "Dedicated technical support team available around the clock to resolve any issues quickly and efficiently.",
+        "image": "/images/supervision/support.jpg"
+      }
+    ]
+  },
+  "aboutPage": {
+    "title": "About AI Machine",
+    "subtitle": "The Future of Automation",
+    "story": "AI Machine is an engineering company specializing in advanced automation systems and intelligent buildings. We combine cutting-edge technology with industry expertise to deliver solutions that transform how businesses and buildings operate.",
+    "mission": "Our mission is to make intelligent automation accessible and practical for every industry, creating smarter, more efficient, and more sustainable environments.",
+    "values": [
+      {
+        "title": "Innovation",
+        "description": "We constantly push the boundaries of what's possible with automation technology."
+      },
+      {
+        "title": "Quality",
+        "description": "Every solution we deliver meets the highest standards of reliability and performance."
+      },
+      {
+        "title": "Partnership",
+        "description": "We work closely with our clients to understand their unique needs and deliver tailored solutions."
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "Let's build the future together",
+    "description": "Ready to transform your business with intelligent automation? Get in touch with our team.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Phone Number",
+      "company": "Company Name",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "address": "ul. Przykładowa 1, 00-001 Warszawa",
+      "phone": "+48 123 456 789",
+      "email": "contact@aimachine.pl"
+    }
+  },
+  "footer": {
+    "ctaTitle": "Build the Future with",
+    "ctaBrand": "AI MACHINE",
+    "ctaButton": "Contact Us",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About Us", "href": "/en/about/" },
+          { "label": "Our Projects", "href": "/en/projects/" },
+          { "label": "Contact", "href": "/en/contact/" }
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          { "label": "AMR & AGV", "href": "/en/solutions/amr-agv/" },
+          { "label": "Warehouse Automation", "href": "/en/solutions/warehouse-automation/" },
+          { "label": "Service Robots", "href": "/en/solutions/service-robots/" },
+          { "label": "Smart Security", "href": "/en/solutions/smart-security/" }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Buildings", "href": "/en/buildings/" },
+          { "label": "Supervision", "href": "/en/supervision/" }
+        ]
+      },
+      {
+        "title": "Partners",
+        "links": [
+          { "label": "Become a Partner", "href": "/en/contact/" },
+          { "label": "For Customers", "href": "/en/contact/" }
+        ]
+      }
+    ],
+    "social": {
+      "facebook": "https://facebook.com/aimachine",
+      "twitter": "https://x.com/aimachine",
+      "instagram": "https://instagram.com/aimachine",
+      "youtube": "https://youtube.com/@aimachine"
+    },
+    "copyright": "© 2026 AI Machine. All rights reserved."
+  }
+}
