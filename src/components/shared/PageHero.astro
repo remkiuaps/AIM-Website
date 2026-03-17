@@ -19,7 +19,7 @@ const { title, subtitle, image, video } = Astro.props;
         muted
         loop
         playsinline
-        class="w-full h-full object-cover opacity-30"
+        class="w-full h-full object-cover opacity-60"
       >
         <source src={url(video)} type={`video/${video.split('.').pop()}`} />
       </video>
@@ -32,7 +32,7 @@ const { title, subtitle, image, video } = Astro.props;
       />
     ) : null}
   </div>
-  <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/60 to-brand-darker/30"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/40 to-transparent"></div>
 
   <!-- Content -->
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
