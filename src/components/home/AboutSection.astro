@@ -37,36 +37,36 @@ const iconImages: Record<string, string> = {
 
     <!-- Features row -->
     <AnimateOnScroll animation="fade-up" delay={150}>
-      <div class="flex flex-col md:flex-row items-stretch justify-center gap-6">
+      <div class="inline-flex flex-col md:flex-row items-stretch justify-center divide-y md:divide-y-0 md:divide-x divide-white/10 bg-brand-card border border-white/5 rounded-xl">
         <!-- Industrial Automation -->
-        <div class="flex items-center gap-4 px-6 py-5 bg-brand-card border border-white/5 rounded-xl">
-          <img
-            src={url(iconImages[about.features[0].icon] || iconImages.industrial)}
-            alt={about.features[0].title}
-            class="w-14 h-14 object-contain shrink-0"
-          />
+        <div class="flex items-center gap-3 px-6 py-4">
+          <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-blue/10 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-blue-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+            </svg>
+          </div>
           <div class="text-left">
-            <h3 class="text-white font-semibold text-sm md:text-base">
+            <h3 class="text-white font-semibold text-sm">
               {about.features[0].title}
             </h3>
-            <p class="text-gray-500 text-xs md:text-sm">
+            <p class="text-gray-500 text-xs">
               {about.features[0].description}
             </p>
           </div>
         </div>
 
         <!-- Smart Infrastructure -->
-        <div class="flex items-center gap-4 px-6 py-5 bg-brand-card border border-white/5 rounded-xl">
-          <img
-            src={url(iconImages[about.features[1].icon] || iconImages.smart)}
-            alt={about.features[1].title}
-            class="w-14 h-14 object-contain shrink-0"
-          />
+        <div class="flex items-center gap-3 px-6 py-4">
+          <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-green/10 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" />
+            </svg>
+          </div>
           <div class="text-left">
-            <h3 class="text-white font-semibold text-sm md:text-base">
+            <h3 class="text-white font-semibold text-sm">
               {about.features[1].title}
             </h3>
-            <p class="text-gray-500 text-xs md:text-sm">
+            <p class="text-gray-500 text-xs">
               {about.features[1].description}
             </p>
           </div>
