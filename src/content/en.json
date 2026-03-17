@@ -151,6 +151,7 @@
     "heroTitle": "Intelligent Buildings",
     "heroSubtitle": "Technology for Premium Living",
     "heroImage": "/images/buildings/building-hero.jpg",
+    "heroVideo": "/videos/buildings-hero.mp4",
     "description": "We design and implement smart building solutions that transform ordinary spaces into intelligent environments. Our systems integrate lighting, climate, security, and entertainment into seamless automated experiences.",
     "sections": [
       {

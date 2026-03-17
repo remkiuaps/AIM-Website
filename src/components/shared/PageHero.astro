@@ -5,21 +5,32 @@ interface Props {
   title: string;
   subtitle: string;
   image?: string;
+  video?: string;
 }
 
-const { title, subtitle, image } = Astro.props;
+const { title, subtitle, image, video } = Astro.props;
 ---
 <section class="relative pt-20 lg:pt-24 pb-16 lg:pb-24 min-h-[50vh] flex items-end overflow-hidden">
   <!-- Background -->
   <div class="absolute inset-0 bg-brand-dark">
-    {image && (
+    {video ? (
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-full h-full object-cover opacity-30"
+      >
+        <source src={url(video)} type={`video/${video.split('.').pop()}`} />
+      </video>
+    ) : image ? (
       <img
         src={url(image)}
         alt={title}
         class="w-full h-full object-cover opacity-30"
         onerror="this.style.display='none'"
       />
-    )}
+    ) : null}
   </div>
   <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/60 to-brand-darker/30"></div>
 

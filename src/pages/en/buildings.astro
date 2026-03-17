@@ -9,7 +9,7 @@ const content = getContent(lang);
 const data = content.buildings;
 ---
 <PageLayout lang={lang} title={`${data.heroTitle} - AI Machine`} description={data.description}>
-  <PageHero title={data.heroTitle} subtitle={data.heroSubtitle} image={data.heroImage} />
+  <PageHero title={data.heroTitle} subtitle={data.heroSubtitle} image={data.heroImage} video={data.heroVideo} />
   <section class="py-16 bg-brand-dark">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-gray-300 text-lg leading-relaxed text-center">{data.description}</p>
