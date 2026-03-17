@@ -10,7 +10,7 @@ interface Props {
 
 const { title, subtitle, image, video } = Astro.props;
 ---
-<section class="relative pt-20 lg:pt-24 pb-16 lg:pb-24 min-h-[50vh] flex items-end overflow-hidden">
+<section class={`relative pt-20 lg:pt-24 pb-16 lg:pb-24 flex items-end overflow-hidden ${video ? 'aspect-[16/10]' : 'min-h-[50vh]'}`}>
   <!-- Background -->
   <div class="absolute inset-0 bg-brand-dark">
     {video ? (
