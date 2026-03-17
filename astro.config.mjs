@@ -4,7 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://remkiuaps.github.io',
-  base: '/AIM-Website',
+  base: '/AIM-Website/',
+  trailingSlash: 'always',
   output: 'static',
   i18n: {
     locales: ['pl', 'en'],
