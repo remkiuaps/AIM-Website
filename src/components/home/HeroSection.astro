@@ -15,11 +15,11 @@ const hero = content.hero;
     <!-- Left Panel - Intelligent Machines -->
     <div class="hero-panel-left relative group overflow-hidden min-h-[50vh] lg:min-h-full lg:absolute lg:inset-0 lg:w-full">
       <!-- Background image -->
-      <div class="absolute inset-0 bg-brand-dark">
+      <div class="absolute inset-0 lg:right-auto lg:w-[53%] bg-brand-dark">
         <img
           src={url(hero.left.image)}
           alt={hero.left.title}
-          class="w-full h-full object-cover object-left opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+          class="w-full h-full object-contain object-center opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
           onerror="this.style.display='none'"
         />
       </div>
@@ -52,11 +52,11 @@ const hero = content.hero;
     <!-- Right Panel - Intelligent Buildings -->
     <div class="hero-panel-right relative group overflow-hidden min-h-[50vh] lg:min-h-full lg:absolute lg:inset-0 lg:w-full">
       <!-- Background image -->
-      <div class="absolute inset-0 bg-brand-dark">
+      <div class="absolute inset-0 lg:left-auto lg:w-[53%] bg-brand-dark">
         <img
           src={url(hero.right.image)}
           alt={hero.right.title}
-          class="w-full h-full object-cover object-right opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+          class="w-full h-full object-contain object-center opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
           onerror="this.style.display='none'"
         />
       </div>
