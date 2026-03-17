@@ -15,7 +15,7 @@ const currentPath = Astro.url.pathname;
     <a
       href={getAlternateUrl(currentPath, code as Lang)}
       class:list={[
-        'px-2 py-1 text-xs font-semibold rounded-md transition-all duration-200',
+        'px-2 py-1 text-xs font-semibold rounded transition-all duration-200',
         code === lang
           ? 'gradient-brand text-white'
           : 'text-gray-400 hover:text-white',
