@@ -162,11 +162,6 @@
         "title": "Building Management Systems",
         "description": "Centralized building management platforms that optimize energy usage, monitor systems health, and provide real-time control over all building systems.",
         "image": "/images/buildings/bms.jpg"
-      },
-      {
-        "title": "Energy Management",
-        "description": "Intelligent energy monitoring and optimization systems that reduce costs and environmental impact while maintaining comfort levels.",
-        "image": "/images/buildings/energy.jpg"
       }
     ]
   },

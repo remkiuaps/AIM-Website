@@ -162,11 +162,6 @@
         "title": "Systemy Zarządzania Budynkiem",
         "description": "Scentralizowane platformy zarządzania budynkiem, które optymalizują zużycie energii, monitorują stan systemów i zapewniają kontrolę w czasie rzeczywistym.",
         "image": "/images/buildings/bms.jpg"
-      },
-      {
-        "title": "Zarządzanie Energią",
-        "description": "Inteligentne systemy monitoringu i optymalizacji energii, które redukują koszty i wpływ na środowisko, zachowując poziom komfortu.",
-        "image": "/images/buildings/energy.jpg"
       }
     ]
   },
