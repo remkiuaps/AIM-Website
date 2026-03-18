@@ -220,7 +220,10 @@
       "phone": "Phone Number",
       "company": "Company Name",
       "message": "Your Message",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again or contact us directly via email."
     },
     "info": {
       "address": "ul. Przykładowa 1, 00-001 Warszawa",

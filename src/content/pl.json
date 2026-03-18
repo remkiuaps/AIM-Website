@@ -220,7 +220,10 @@
       "phone": "Numer Telefonu",
       "company": "Nazwa Firmy",
       "message": "Twoja Wiadomość",
-      "submit": "Wyślij Wiadomość"
+      "submit": "Wyślij Wiadomość",
+      "sending": "Wysyłanie...",
+      "success": "Wiadomość wysłana pomyślnie! Odpowiemy najszybciej jak to możliwe.",
+      "error": "Coś poszło nie tak. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio przez email."
     },
     "info": {
       "address": "ul. Przykładowa 1, 00-001 Warszawa",
