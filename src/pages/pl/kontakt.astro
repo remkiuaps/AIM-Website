@@ -58,13 +58,13 @@ const contact = content.contactPage;
                 <svg id="btn-icon" xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-                <svg id="btn-spinner" class="hidden animate-spin inline-block ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <svg id="btn-spinner" class="animate-spin ml-2 h-4 w-4" style="display:none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
                 </svg>
               </button>
 
-              <div id="form-message" class="hidden rounded-lg p-4 text-sm text-center"></div>
+              <div id="form-message" class="rounded-lg p-4 text-sm text-center" style="display:none"></div>
             </form>
           </div>
         </AnimateOnScroll>
@@ -143,8 +143,8 @@ const contact = content.contactPage;
 
       const originalText = btnText.textContent;
       btnText.textContent = 'Wysyłanie...';
-      btnIcon.classList.add('hidden');
-      btnSpinner.classList.remove('hidden');
+      btnIcon.style.display = 'none';
+      btnSpinner.style.display = 'inline-block';
       btn.disabled = true;
 
       try {
@@ -154,24 +154,29 @@ const contact = content.contactPage;
         });
         const data = await response.json();
 
-        msg.classList.remove('hidden', 'bg-red-500/10', 'text-red-400', 'bg-green-500/10', 'text-green-400');
+        msg.className = 'rounded-lg p-4 text-sm text-center';
+        msg.style.display = 'block';
 
         if (data.success) {
-          msg.classList.add('bg-green-500/10', 'text-green-400');
+          msg.style.backgroundColor = 'rgba(34,197,94,0.1)';
+          msg.style.color = '#4ade80';
           msg.textContent = 'Wiadomość wysłana pomyślnie! Odpowiemy najszybciej jak to możliwe.';
           form.reset();
         } else {
-          msg.classList.add('bg-red-500/10', 'text-red-400');
+          msg.style.backgroundColor = 'rgba(239,68,68,0.1)';
+          msg.style.color = '#f87171';
           msg.textContent = 'Coś poszło nie tak. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio przez email.';
         }
       } catch (err) {
-        msg.classList.remove('hidden', 'bg-red-500/10', 'text-red-400', 'bg-green-500/10', 'text-green-400');
-        msg.classList.add('bg-red-500/10', 'text-red-400');
+        msg.className = 'rounded-lg p-4 text-sm text-center';
+        msg.style.display = 'block';
+        msg.style.backgroundColor = 'rgba(239,68,68,0.1)';
+        msg.style.color = '#f87171';
         msg.textContent = 'Coś poszło nie tak. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio przez email.';
       } finally {
         btnText.textContent = originalText;
-        btnIcon.classList.remove('hidden');
-        btnSpinner.classList.add('hidden');
+        btnIcon.style.display = 'inline-block';
+        btnSpinner.style.display = 'none';
         btn.disabled = false;
       }
     });
