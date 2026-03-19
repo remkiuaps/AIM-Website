@@ -15,6 +15,10 @@ const solutionsBase = url(lang === 'pl' ? '/pl/rozwiazania' : '/en/solutions');
 
 const blueIcons = new Set(['amr-agv', 'warehouse-automation']);
 
+const partners = (solutions as any).partners ?? [];
+const brands = (solutions as any).brands ?? [];
+const partnersTitle = (solutions as any).partnersTitle ?? 'Our Technology Partners';
+const brandsTitle = (solutions as any).brandsTitle ?? 'Technologies We Work With';
 ---
 <section id="solutions" class="py-20 lg:py-28 bg-brand-darker relative">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,6 +26,7 @@ const blueIcons = new Set(['amr-agv', 'warehouse-automation']);
       <SectionHeading title={solutions.sectionTitle} centered={false} />
     </AnimateOnScroll>
 
+    <!-- Solutions Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
       {solutions.items.map((solution, index) => (
         <AnimateOnScroll animation="fade-up" delay={index * 100}>
@@ -62,5 +67,82 @@ const blueIcons = new Set(['amr-agv', 'warehouse-automation']);
         </AnimateOnScroll>
       ))}
     </div>
+
+    <!-- Partners Section -->
+    {partners.length > 0 && (
+      <div class="mt-20 lg:mt-28">
+        <AnimateOnScroll animation="fade-up">
+          <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-12 text-center">
+            {partnersTitle}
+          </h3>
+        </AnimateOnScroll>
+
+        <div class="flex flex-wrap items-center justify-center gap-10 lg:gap-20">
+          {partners.map((partner: any, index: number) => (
+            <AnimateOnScroll animation="fade-up" delay={index * 150}>
+              <a
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group relative flex items-center justify-center p-8 lg:p-10 rounded-2xl bg-[#0a0f16] border border-white/5 hover:border-brand-teal/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              >
+                <img
+                  src={url(partner.logo)}
+                  alt={partner.name}
+                  class="h-16 lg:h-20 w-auto object-contain brightness-90 group-hover:brightness-110 transition-all duration-300"
+                />
+                <div class="absolute bottom-0 left-0 w-full h-[2px] bg-brand-teal/50 opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
+            </AnimateOnScroll>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Brands / Technologies Section -->
+    {brands.length > 0 && (
+      <div class="mt-20 lg:mt-28">
+        <AnimateOnScroll animation="fade-up">
+          <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-12 text-center">
+            {brandsTitle}
+          </h3>
+        </AnimateOnScroll>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+          {brands.map((brand: any, index: number) => (
+            <AnimateOnScroll animation="fade-up" delay={index * 100}>
+              <a
+                href={brand.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group relative flex flex-col p-6 rounded-xl bg-[#0a0f16] border border-white/5 hover:border-brand-teal/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden h-full"
+              >
+                <!-- Brand Name -->
+                <h4 class="text-lg font-heading font-bold text-white mb-3 group-hover:text-brand-green transition-colors duration-300">
+                  {brand.name}
+                </h4>
+
+                <!-- Description -->
+                <p class="text-sm text-gray-400 leading-relaxed flex-1">
+                  {brand.description}
+                </p>
+
+                <!-- External link indicator -->
+                <div class="mt-4 flex items-center text-xs text-brand-teal/70 group-hover:text-brand-teal transition-colors duration-300">
+                  <span>{lang === 'pl' ? 'Dowiedz się więcej' : 'Learn more'}</span>
+                  <svg class="w-3 h-3 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+
+                <!-- Hover glow & bottom border accent -->
+                <div class="absolute bottom-0 left-0 w-full h-[2px] bg-brand-green/50 opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-gradient-to-t from-brand-green/5 to-transparent"></div>
+              </a>
+            </AnimateOnScroll>
+          ))}
+        </div>
+      </div>
+    )}
   </div>
 </section>

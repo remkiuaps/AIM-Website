@@ -47,6 +47,42 @@
   },
   "solutions": {
     "sectionTitle": "Our Solutions",
+    "partnersTitle": "Our Technology Partners",
+    "brandsTitle": "Technologies We Work With",
+    "partners": [
+      {
+        "name": "Loxone",
+        "logo": "/images/partners/loxone.svg",
+        "url": "https://www.loxone.com/plpl/"
+      },
+      {
+        "name": "KNX",
+        "logo": "/images/partners/knx.png",
+        "url": "https://knxpoland.pl/"
+      }
+    ],
+    "brands": [
+      {
+        "name": "Basalte",
+        "url": "https://www.basalte.be/en",
+        "description": "Belgian manufacturer of luxury smart home control interfaces. Elegant touch panels, keypads, and audio systems where exclusive design meets cutting-edge technology."
+      },
+      {
+        "name": "Ekinex",
+        "url": "https://www.ekinex.com/en/",
+        "description": "Italian manufacturer of KNX-based building automation systems. Advanced control panels, visualization systems, and hospitality solutions where technology meets Italian design."
+      },
+      {
+        "name": "JUNG",
+        "url": "https://jungteam.pl/",
+        "description": "German electrical systems manufacturer with over 100 years of tradition. Premium switch collections, KNX Smart Home systems, and intelligent controls, honored with 170+ design awards."
+      },
+      {
+        "name": "Gira",
+        "url": "https://partner.gira.com/pl_PL/index.html",
+        "description": "German building automation leader operating in 38 countries. Intelligent KNX control systems, door communication, and building security and energy management solutions."
+      }
+    ],
     "items": [
       {
         "slug": "amr-agv",

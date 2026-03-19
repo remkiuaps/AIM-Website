@@ -47,6 +47,42 @@
   },
   "solutions": {
     "sectionTitle": "Nasze Rozwiązania",
+    "partnersTitle": "Nasi Partnerzy Technologiczni",
+    "brandsTitle": "Technologie, z Których Korzystamy",
+    "partners": [
+      {
+        "name": "Loxone",
+        "logo": "/images/partners/loxone.svg",
+        "url": "https://www.loxone.com/plpl/"
+      },
+      {
+        "name": "KNX",
+        "logo": "/images/partners/knx.png",
+        "url": "https://knxpoland.pl/"
+      }
+    ],
+    "brands": [
+      {
+        "name": "Basalte",
+        "url": "https://www.basalte.be/en",
+        "description": "Belgijski producent luksusowych interfejsów do sterowania inteligentnym domem. Eleganckie panele dotykowe, klawiatury i systemy audio, w których ekskluzywny design spotyka najnowszą technologię."
+      },
+      {
+        "name": "Ekinex",
+        "url": "https://www.ekinex.com/en/",
+        "description": "Włoski producent systemów automatyki budynkowej opartych na standardzie KNX. Zaawansowane panele sterowania, systemy wizualizacji i rozwiązania hotelowe, gdzie technologia spotyka włoski design."
+      },
+      {
+        "name": "JUNG",
+        "url": "https://jungteam.pl/",
+        "description": "Niemiecki producent systemów elektrycznych z ponad 100-letnią tradycją. Premiumowe kolekcje łączników, systemy KNX Smart Home oraz inteligentne sterowanie, wyróżnione ponad 170 nagrodami za design."
+      },
+      {
+        "name": "Gira",
+        "url": "https://partner.gira.com/pl_PL/index.html",
+        "description": "Niemiecki lider automatyki budynkowej obecny w 38 krajach. Inteligentne systemy sterowania KNX, komunikacji domowej oraz zarządzania bezpieczeństwem i energią w budynkach."
+      }
+    ],
     "items": [
       {
         "slug": "amr-agv",
