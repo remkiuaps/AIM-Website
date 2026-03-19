@@ -10,8 +10,9 @@ interface Props {
 
 const { lang, title, description } = Astro.props;
 const currentPath = Astro.url.pathname;
-const alternatePl = getAlternateUrl(currentPath, 'pl');
-const alternateEn = getAlternateUrl(currentPath, 'en');
+const siteUrl = 'https://remkiuaps.github.io';
+const alternatePl = `${siteUrl}${getAlternateUrl(currentPath, 'pl')}`;
+const alternateEn = `${siteUrl}${getAlternateUrl(currentPath, 'en')}`;
 ---
 <!DOCTYPE html>
 <html lang={lang} class="dark">

@@ -10,8 +10,8 @@ const content = getContent(lang);
 <PageLayout lang={lang} title={`${content.solutions.sectionTitle} - AI Machine`}>
   <PageHero
     title={content.solutions.sectionTitle}
-    subtitle="Dostarczamy zaawansowane rozwiązania automatyzacji dla przemysłu i budynków."
+    subtitle={(content.solutions as any).pageSubtitle}
     video="/videos/solutions-hero.mp4"
   />
-  <SolutionsSection lang={lang} hideSolutionsGrid={true} />
+  <SolutionsSection lang={lang} />
 </PageLayout>

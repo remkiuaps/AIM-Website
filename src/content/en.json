@@ -47,6 +47,7 @@
   },
   "solutions": {
     "sectionTitle": "Our Solutions",
+    "pageSubtitle": "We deliver advanced automation solutions for industry and buildings.",
     "partnersTitle": "Our Technology Partners",
     "brandsTitle": "Technologies We Work With",
     "partners": [
@@ -208,6 +209,10 @@
       "error": "Something went wrong. Please try again or contact us directly via email."
     },
     "info": {
+      "title": "Contact Information",
+      "companyLabel": "Company",
+      "addressLabel": "Address",
+      "emailLabel": "Email",
       "companyName": "AI Machine Sp. z o.o.",
       "address": "Korczunkowa 20, 05-503 Głosków, Poland",
       "email": "info@aimachine.pl"

@@ -71,7 +71,7 @@ const info = contact.info as any;
           <div class="space-y-6">
             <!-- Company Info Card -->
             <div class="contact-glass p-6 rounded-2xl">
-              <h3 class="text-lg font-bold font-heading text-white mb-5">Contact Information</h3>
+              <h3 class="text-lg font-bold font-heading text-white mb-5">{info.title}</h3>
               <div class="space-y-4">
                 <div class="flex items-start gap-4">
                   <div class="flex items-center justify-center w-10 h-10 rounded-lg gradient-brand shrink-0 mt-0.5">
@@ -80,7 +80,7 @@ const info = contact.info as any;
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-gray-400">Company</p>
+                    <p class="text-sm text-gray-400">{info.companyLabel}</p>
                     <p class="text-white font-medium">{info.companyName}</p>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const info = contact.info as any;
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-gray-400">Address</p>
+                    <p class="text-sm text-gray-400">{info.addressLabel}</p>
                     <p class="text-white">{info.address}</p>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const info = contact.info as any;
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-gray-400">Email</p>
+                    <p class="text-sm text-gray-400">{info.emailLabel}</p>
                     <a href={`mailto:${info.email}`} class="text-white hover:text-brand-teal transition-colors">{info.email}</a>
                   </div>
                 </div>
@@ -188,55 +188,60 @@ const info = contact.info as any;
 
   <script is:inline>
     // Contact form
-    document.getElementById('contact-form').addEventListener('submit', async function(e) {
-      e.preventDefault();
+    var contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
 
-      const form = e.target;
-      const btn = document.getElementById('submit-btn');
-      const btnText = document.getElementById('btn-text');
-      const btnIcon = document.getElementById('btn-icon');
-      const btnSpinner = document.getElementById('btn-spinner');
-      const msg = document.getElementById('form-message');
+        var form = e.target;
+        var btn = document.getElementById('submit-btn');
+        var btnText = document.getElementById('btn-text');
+        var btnIcon = document.getElementById('btn-icon');
+        var btnSpinner = document.getElementById('btn-spinner');
+        var msg = document.getElementById('form-message');
 
-      const originalText = btnText.textContent;
-      btnText.textContent = 'Sending...';
-      btnIcon.style.display = 'none';
-      btnSpinner.style.display = 'inline-block';
-      btn.disabled = true;
+        if (!btn || !btnText || !btnIcon || !btnSpinner || !msg) return;
 
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-        });
-        const data = await response.json();
+        var originalText = btnText.textContent;
+        btnText.textContent = 'Sending...';
+        btnIcon.style.display = 'none';
+        btnSpinner.style.display = 'inline-block';
+        btn.disabled = true;
 
-        msg.className = 'rounded-lg p-4 text-sm text-center';
-        msg.style.display = 'block';
+        try {
+          var response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+          });
+          var data = await response.json();
 
-        if (data.success) {
-          msg.style.backgroundColor = 'rgba(34,197,94,0.1)';
-          msg.style.color = '#4ade80';
-          msg.textContent = 'Message sent successfully! We\'ll get back to you soon.';
-          form.reset();
-        } else {
+          msg.className = 'rounded-lg p-4 text-sm text-center';
+          msg.style.display = 'block';
+
+          if (data.success) {
+            msg.style.backgroundColor = 'rgba(34,197,94,0.1)';
+            msg.style.color = '#4ade80';
+            msg.textContent = 'Message sent successfully! We\'ll get back to you soon.';
+            form.reset();
+          } else {
+            msg.style.backgroundColor = 'rgba(239,68,68,0.1)';
+            msg.style.color = '#f87171';
+            msg.textContent = 'Something went wrong. Please try again or contact us directly via email.';
+          }
+        } catch (err) {
+          msg.className = 'rounded-lg p-4 text-sm text-center';
+          msg.style.display = 'block';
           msg.style.backgroundColor = 'rgba(239,68,68,0.1)';
           msg.style.color = '#f87171';
           msg.textContent = 'Something went wrong. Please try again or contact us directly via email.';
+        } finally {
+          btnText.textContent = originalText;
+          btnIcon.style.display = 'inline-block';
+          btnSpinner.style.display = 'none';
+          btn.disabled = false;
         }
-      } catch (err) {
-        msg.className = 'rounded-lg p-4 text-sm text-center';
-        msg.style.display = 'block';
-        msg.style.backgroundColor = 'rgba(239,68,68,0.1)';
-        msg.style.color = '#f87171';
-        msg.textContent = 'Something went wrong. Please try again or contact us directly via email.';
-      } finally {
-        btnText.textContent = originalText;
-        btnIcon.style.display = 'inline-block';
-        btnSpinner.style.display = 'none';
-        btn.disabled = false;
-      }
-    });
+      });
+    }
 
     // FAQ accordion
     document.querySelectorAll('.faq-toggle').forEach(function(btn) {
