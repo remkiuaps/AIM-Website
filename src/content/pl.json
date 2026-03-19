@@ -8,7 +8,7 @@
     "buildings": "Budynki",
     "supervision": "Nadzór",
     "solutions": "Rozwiązania",
-    "projects": "Projekty",
+
     "about": "O Nas",
     "contact": "Kontakt",
     "search": "Szukaj"
@@ -52,7 +52,7 @@
     "partners": [
       {
         "name": "Loxone",
-        "logo": "/images/partners/loxone.svg",
+        "logo": "/images/partners/loxone-white.svg",
         "url": "https://www.loxone.com/plpl/"
       },
       {
@@ -64,23 +64,31 @@
     "brands": [
       {
         "name": "Basalte",
+        "logo": "/images/partners/basalte-white.svg",
+        "image": "/images/partners/basalte.png",
         "url": "https://www.basalte.be/en",
-        "description": "Belgijski producent luksusowych interfejsów do sterowania inteligentnym domem. Eleganckie panele dotykowe, klawiatury i systemy audio, w których ekskluzywny design spotyka najnowszą technologię."
+        "description": "Belgijski producent luksusowych interfejsów do sterowania inteligentnym domem. Eleganckie panele dotykowe, klawiatury i systemy audio."
       },
       {
         "name": "Ekinex",
+        "logo": "/images/partners/ekinex-white.svg",
+        "image": "/images/partners/ekinex.png",
         "url": "https://www.ekinex.com/en/",
-        "description": "Włoski producent systemów automatyki budynkowej opartych na standardzie KNX. Zaawansowane panele sterowania, systemy wizualizacji i rozwiązania hotelowe, gdzie technologia spotyka włoski design."
+        "description": "Włoski producent systemów automatyki budynkowej opartych na standardzie KNX. Panele sterowania i systemy wizualizacji."
       },
       {
         "name": "JUNG",
+        "logo": "/images/partners/jung-white.svg",
+        "image": "/images/partners/jung.png",
         "url": "https://jungteam.pl/",
-        "description": "Niemiecki producent systemów elektrycznych z ponad 100-letnią tradycją. Premiumowe kolekcje łączników, systemy KNX Smart Home oraz inteligentne sterowanie, wyróżnione ponad 170 nagrodami za design."
+        "description": "Niemiecki producent systemów elektrycznych z ponad 100-letnią tradycją. Premiumowe kolekcje łączników i systemy KNX Smart Home."
       },
       {
         "name": "Gira",
+        "logo": "/images/partners/gira-white.svg",
+        "image": "/images/partners/gira.png",
         "url": "https://partner.gira.com/pl_PL/index.html",
-        "description": "Niemiecki lider automatyki budynkowej obecny w 38 krajach. Inteligentne systemy sterowania KNX, komunikacji domowej oraz zarządzania bezpieczeństwem i energią w budynkach."
+        "description": "Niemiecki lider automatyki budynkowej obecny w 38 krajach. Inteligentne systemy sterowania KNX i zarządzania budynkiem."
       }
     ],
     "items": [
@@ -139,75 +147,6 @@
           "Zdalny monitoring"
         ],
         "image": "/images/solutions/smart-security-detail.jpg"
-      }
-    ]
-  },
-  "projects": {
-    "sectionTitle": "Nasze Projekty",
-    "items": [
-      {
-        "slug": "modern-warehouse",
-        "title": "Nowoczesny Magazyn",
-        "category": "Przemysłowy",
-        "shortDescription": "W pełni zautomatyzowany obiekt magazynowy ze zintegrowaną flotą AMR i inteligentnymi systemami zarządzania.",
-        "fullDescription": "Najnowocześniejszy obiekt magazynowy wyposażony w w pełni zautomatyzowane systemy składowania i pobierania, flotę autonomicznych robotów mobilnych oraz zintegrowany system zarządzania magazynem. Projekt ten prezentuje naszą zdolność do dostarczania kompleksowych rozwiązań automatyzacji.",
-        "image": "/images/projects/modern-warehouse.png",
-        "gallery": [
-          "/images/projects/modern-warehouse.png"
-        ],
-        "specs": {
-          "area": "5 000 m²",
-          "year": "2025",
-          "location": "Polska"
-        }
-      },
-      {
-        "slug": "luxury-villa",
-        "title": "Luksusowa Willa",
-        "category": "Rezydencjalny",
-        "shortDescription": "Premiumowa instalacja inteligentnego domu z pełną automatyzacją i zarządzaniem budynkiem.",
-        "fullDescription": "Luksusowy projekt rezydencjalny obejmujący kompleksową automatyzację inteligentnego domu, w tym systemy oświetlenia, klimatyzacji, bezpieczeństwa, rozrywki i zarządzania energią. Wszystko kontrolowane przez intuicyjny interfejs.",
-        "image": "/images/projects/luxury-villa.png",
-        "gallery": [
-          "/images/projects/luxury-villa.png"
-        ],
-        "specs": {
-          "area": "800 m²",
-          "year": "2025",
-          "location": "Polska"
-        }
-      },
-      {
-        "slug": "business-hotel",
-        "title": "Hotel Biznesowy",
-        "category": "Komercyjny",
-        "shortDescription": "Inteligentny system hotelowy z automatyczną obsługą gości i zarządzaniem energią.",
-        "fullDescription": "Inteligentny system zarządzania hotelem zapewniający automatyczną obsługę gości, optymalizację energii, monitoring bezpieczeństwa i inteligentne sterowanie pokojami. Poprawiamy doświadczenie gości, jednocześnie redukując koszty operacyjne.",
-        "image": "/images/projects/business-hotel.png",
-        "gallery": [
-          "/images/projects/business-hotel.png"
-        ],
-        "specs": {
-          "area": "12 000 m²",
-          "year": "2024",
-          "location": "Polska"
-        }
-      },
-      {
-        "slug": "office-complex",
-        "title": "Kompleks Biurowy",
-        "category": "Komercyjny",
-        "shortDescription": "Inteligentna automatyka budynkowa dla nowoczesnego kompleksu biurowego.",
-        "fullDescription": "Kompleksowy projekt automatyki budynkowej dla wielopiętrowego kompleksu biurowego, obejmujący inteligentne systemy HVAC, oświetlenia, kontroli dostępu i zarządzania przestrzenią roboczą, zaprojektowane dla maksymalnego komfortu i efektywności energetycznej.",
-        "image": "/images/projects/office-complex.png",
-        "gallery": [
-          "/images/projects/office-complex.png"
-        ],
-        "specs": {
-          "area": "25 000 m²",
-          "year": "2024",
-          "location": "Polska"
-        }
       }
     ]
   },
@@ -307,10 +246,7 @@
             "label": "O Nas",
             "href": "/pl/o-nas/"
           },
-          {
-            "label": "Nasze Projekty",
-            "href": "/pl/projekty/"
-          },
+
           {
             "label": "Kontakt",
             "href": "/pl/kontakt/"

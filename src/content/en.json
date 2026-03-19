@@ -8,7 +8,7 @@
     "buildings": "Buildings",
     "supervision": "Supervision",
     "solutions": "Solutions",
-    "projects": "Projects",
+
     "about": "About",
     "contact": "Contact Us",
     "search": "Search"
@@ -52,7 +52,7 @@
     "partners": [
       {
         "name": "Loxone",
-        "logo": "/images/partners/loxone.svg",
+        "logo": "/images/partners/loxone-white.svg",
         "url": "https://www.loxone.com/plpl/"
       },
       {
@@ -64,23 +64,31 @@
     "brands": [
       {
         "name": "Basalte",
+        "logo": "/images/partners/basalte-white.svg",
+        "image": "/images/partners/basalte.png",
         "url": "https://www.basalte.be/en",
-        "description": "Belgian manufacturer of luxury smart home control interfaces. Elegant touch panels, keypads, and audio systems where exclusive design meets cutting-edge technology."
+        "description": "Belgian manufacturer of luxury smart home control interfaces. Elegant touch panels, keypads, and audio systems."
       },
       {
         "name": "Ekinex",
+        "logo": "/images/partners/ekinex-white.svg",
+        "image": "/images/partners/ekinex.png",
         "url": "https://www.ekinex.com/en/",
-        "description": "Italian manufacturer of KNX-based building automation systems. Advanced control panels, visualization systems, and hospitality solutions where technology meets Italian design."
+        "description": "Italian manufacturer of KNX-based building automation systems. Control panels and visualization systems."
       },
       {
         "name": "JUNG",
+        "logo": "/images/partners/jung-white.svg",
+        "image": "/images/partners/jung.png",
         "url": "https://jungteam.pl/",
-        "description": "German electrical systems manufacturer with over 100 years of tradition. Premium switch collections, KNX Smart Home systems, and intelligent controls, honored with 170+ design awards."
+        "description": "German electrical systems manufacturer with over 100 years of tradition. Premium switch collections and KNX Smart Home systems."
       },
       {
         "name": "Gira",
+        "logo": "/images/partners/gira-white.svg",
+        "image": "/images/partners/gira.png",
         "url": "https://partner.gira.com/pl_PL/index.html",
-        "description": "German building automation leader operating in 38 countries. Intelligent KNX control systems, door communication, and building security and energy management solutions."
+        "description": "German building automation leader operating in 38 countries. Intelligent KNX control systems and building management."
       }
     ],
     "items": [
@@ -119,67 +127,6 @@
         "fullDescription": "Protect your assets with our intelligent security systems. Combining AI-powered video analytics, access control, and integrated monitoring platforms, our solutions provide comprehensive security for any facility.",
         "features": ["AI video analytics", "Access control", "Intrusion detection", "Remote monitoring"],
         "image": "/images/solutions/smart-security-detail.jpg"
-      }
-    ]
-  },
-  "projects": {
-    "sectionTitle": "Our Projects",
-    "items": [
-      {
-        "slug": "modern-warehouse",
-        "title": "Modern Warehouse",
-        "category": "Industrial",
-        "shortDescription": "Fully automated warehouse facility with integrated AMR fleet and intelligent management systems.",
-        "fullDescription": "A state-of-the-art warehouse facility featuring fully automated storage and retrieval systems, a fleet of autonomous mobile robots, and an integrated warehouse management system. This project showcases our ability to deliver end-to-end automation solutions.",
-        "image": "/images/projects/modern-warehouse.png",
-        "gallery": ["/images/projects/modern-warehouse.png"],
-        "specs": {
-          "area": "5,000 m²",
-          "year": "2025",
-          "location": "Poland"
-        }
-      },
-      {
-        "slug": "luxury-villa",
-        "title": "Luxury Villa",
-        "category": "Residential",
-        "shortDescription": "Premium smart home installation with full automation and intelligent building management.",
-        "fullDescription": "A luxury residential project featuring comprehensive smart home automation including lighting, climate, security, entertainment, and energy management systems. All controlled through an intuitive interface.",
-        "image": "/images/projects/luxury-villa.png",
-        "gallery": ["/images/projects/luxury-villa.png"],
-        "specs": {
-          "area": "800 m²",
-          "year": "2025",
-          "location": "Poland"
-        }
-      },
-      {
-        "slug": "business-hotel",
-        "title": "Business Hotel",
-        "category": "Commercial",
-        "shortDescription": "Smart hotel system with automated guest services and energy management.",
-        "fullDescription": "An intelligent hotel management system providing automated guest services, energy optimization, security surveillance, and smart room controls. Enhancing guest experience while reducing operational costs.",
-        "image": "/images/projects/business-hotel.png",
-        "gallery": ["/images/projects/business-hotel.png"],
-        "specs": {
-          "area": "12,000 m²",
-          "year": "2024",
-          "location": "Poland"
-        }
-      },
-      {
-        "slug": "office-complex",
-        "title": "Office Complex",
-        "category": "Commercial",
-        "shortDescription": "Intelligent building automation for a modern office complex.",
-        "fullDescription": "A comprehensive building automation project for a multi-story office complex, featuring intelligent HVAC, lighting, access control, and workspace management systems designed for maximum comfort and energy efficiency.",
-        "image": "/images/projects/office-complex.png",
-        "gallery": ["/images/projects/office-complex.png"],
-        "specs": {
-          "area": "25,000 m²",
-          "year": "2024",
-          "location": "Poland"
-        }
       }
     ]
   },
@@ -276,7 +223,7 @@
         "title": "Company",
         "links": [
           { "label": "About Us", "href": "/en/about/" },
-          { "label": "Our Projects", "href": "/en/projects/" },
+
           { "label": "Contact", "href": "/en/contact/" }
         ]
       },

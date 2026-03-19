@@ -6,9 +6,10 @@ import AnimateOnScroll from '../ui/AnimateOnScroll.astro';
 
 interface Props {
   lang: Lang;
+  hideSolutionsGrid?: boolean;
 }
 
-const { lang } = Astro.props;
+const { lang, hideSolutionsGrid = false } = Astro.props;
 const content = getContent(lang);
 const solutions = content.solutions;
 const solutionsBase = url(lang === 'pl' ? '/pl/rozwiazania' : '/en/solutions');
@@ -26,72 +27,71 @@ const brandsTitle = (solutions as any).brandsTitle ?? 'Technologies We Work With
       <SectionHeading title={solutions.sectionTitle} centered={false} />
     </AnimateOnScroll>
 
-    <!-- Solutions Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-      {solutions.items.map((solution, index) => (
-        <AnimateOnScroll animation="fade-up" delay={index * 100}>
-          <a
-            href={`${solutionsBase}/${solution.slug}/`}
-            class:list={[
-              'group relative flex flex-col items-center justify-center py-8 px-4 rounded-xl bg-[#0a0f16] border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden',
-              blueIcons.has(solution.slug) ? 'hover:border-brand-blue/30' : 'hover:border-brand-teal/30',
-            ]}
-          >
-            <!-- Icon -->
-            <div class="flex items-center justify-center w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-110">
-              <img
-                src={url(solution.icon)}
-                alt={solution.title}
-                class="w-full h-full object-contain mix-blend-screen drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]"
-              />
-            </div>
+    {!hideSolutionsGrid && (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+        {solutions.items.map((solution, index) => (
+          <AnimateOnScroll animation="fade-up" delay={index * 100}>
+            <a
+              href={`${solutionsBase}/${solution.slug}/`}
+              class:list={[
+                'group relative flex flex-col items-center justify-center py-8 px-4 rounded-xl bg-[#0a0f16] border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden',
+                blueIcons.has(solution.slug) ? 'hover:border-brand-blue/30' : 'hover:border-brand-teal/30',
+              ]}
+            >
+              <div class="flex items-center justify-center w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-110">
+                <img
+                  src={url(solution.icon)}
+                  alt={solution.title}
+                  class="w-full h-full object-contain mix-blend-screen drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]"
+                />
+              </div>
+              <h3 class:list={[
+                'text-sm sm:text-base font-medium text-gray-200 text-center transition-colors',
+                blueIcons.has(solution.slug) ? 'group-hover:text-brand-blue-light' : 'group-hover:text-brand-green',
+              ]}>
+                {solution.title}
+              </h3>
+              <div class:list={[
+                'absolute bottom-0 left-0 w-full h-[2px] opacity-50 group-hover:opacity-100 transition-opacity duration-300',
+                blueIcons.has(solution.slug) ? 'bg-brand-blue/80' : 'bg-brand-green/80',
+              ]}></div>
+              <div class:list={[
+                'absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none',
+                blueIcons.has(solution.slug) ? 'bg-gradient-to-t from-brand-blue/10 to-transparent' : 'bg-gradient-to-t from-brand-green/10 to-transparent',
+              ]}></div>
+            </a>
+          </AnimateOnScroll>
+        ))}
+      </div>
+    )}
 
-            <!-- Title -->
-            <h3 class:list={[
-              'text-sm sm:text-base font-medium text-gray-200 text-center transition-colors',
-              blueIcons.has(solution.slug) ? 'group-hover:text-brand-blue-light' : 'group-hover:text-brand-green',
-            ]}>
-              {solution.title}
-            </h3>
-
-            <!-- Hover glow & bottom border accent -->
-            <div class:list={[
-              'absolute bottom-0 left-0 w-full h-[2px] opacity-50 group-hover:opacity-100 transition-opacity duration-300',
-              blueIcons.has(solution.slug) ? 'bg-brand-blue/80' : 'bg-brand-green/80',
-            ]}></div>
-            <div class:list={[
-              'absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none',
-              blueIcons.has(solution.slug) ? 'bg-gradient-to-t from-brand-blue/10 to-transparent' : 'bg-gradient-to-t from-brand-green/10 to-transparent',
-            ]}></div>
-          </a>
-        </AnimateOnScroll>
-      ))}
-    </div>
-
-    <!-- Partners Section -->
+    <!-- Partners Section - Prominent -->
     {partners.length > 0 && (
-      <div class="mt-20 lg:mt-28">
+      <div class="mt-24 lg:mt-32">
         <AnimateOnScroll animation="fade-up">
-          <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-12 text-center">
-            {partnersTitle}
-          </h3>
+          <div class="text-center mb-14">
+            <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white">
+              {partnersTitle}
+            </h3>
+            <div class="mt-3 mx-auto w-16 h-[2px] bg-gradient-to-r from-brand-teal to-brand-green rounded-full"></div>
+          </div>
         </AnimateOnScroll>
 
-        <div class="flex flex-wrap items-center justify-center gap-10 lg:gap-20">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 lg:gap-10">
           {partners.map((partner: any, index: number) => (
             <AnimateOnScroll animation="fade-up" delay={index * 150}>
               <a
                 href={partner.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="group relative flex items-center justify-center p-8 lg:p-10 rounded-2xl bg-[#0a0f16] border border-white/5 hover:border-brand-teal/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                class="partner-glass group relative flex items-center justify-center w-64 sm:w-72 h-32 rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_8px_32px_rgba(26,138,122,0.15)]"
               >
                 <img
                   src={url(partner.logo)}
                   alt={partner.name}
-                  class="h-16 lg:h-20 w-auto object-contain brightness-90 group-hover:brightness-110 transition-all duration-300"
+                  class="h-12 lg:h-14 w-auto object-contain opacity-80 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110"
                 />
-                <div class="absolute bottom-0 left-0 w-full h-[2px] bg-brand-teal/50 opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-brand-teal to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </a>
             </AnimateOnScroll>
           ))}
@@ -103,41 +103,60 @@ const brandsTitle = (solutions as any).brandsTitle ?? 'Technologies We Work With
     {brands.length > 0 && (
       <div class="mt-20 lg:mt-28">
         <AnimateOnScroll animation="fade-up">
-          <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-12 text-center">
-            {brandsTitle}
-          </h3>
+          <div class="text-center mb-14">
+            <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white">
+              {brandsTitle}
+            </h3>
+            <div class="mt-3 mx-auto w-16 h-[2px] bg-gradient-to-r from-brand-teal to-brand-green rounded-full"></div>
+          </div>
         </AnimateOnScroll>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
           {brands.map((brand: any, index: number) => (
-            <AnimateOnScroll animation="fade-up" delay={index * 100}>
+            <AnimateOnScroll animation="fade-up" delay={index * 120}>
               <a
                 href={brand.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="group relative flex flex-col p-6 rounded-xl bg-[#0a0f16] border border-white/5 hover:border-brand-teal/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden h-full"
+                class="brand-card group relative flex flex-col rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(26,138,122,0.15)]"
               >
-                <!-- Brand Name -->
-                <h4 class="text-lg font-heading font-bold text-white mb-3 group-hover:text-brand-green transition-colors duration-300">
-                  {brand.name}
-                </h4>
-
-                <!-- Description -->
-                <p class="text-sm text-gray-400 leading-relaxed flex-1">
-                  {brand.description}
-                </p>
-
-                <!-- External link indicator -->
-                <div class="mt-4 flex items-center text-xs text-brand-teal/70 group-hover:text-brand-teal transition-colors duration-300">
-                  <span>{lang === 'pl' ? 'Dowiedz się więcej' : 'Learn more'}</span>
-                  <svg class="w-3 h-3 ml-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
+                <!-- Product Image -->
+                <div class="relative aspect-[16/10] overflow-hidden">
+                  <img
+                    src={url(brand.image)}
+                    alt={brand.name}
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <!-- Image gradient overlay -->
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#060b14] via-[#060b14]/40 to-transparent"></div>
+                  <!-- Logo on image -->
+                  <div class="absolute bottom-4 left-5">
+                    <img
+                      src={url(brand.logo)}
+                      alt={brand.name}
+                      class="h-6 lg:h-7 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-500 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+                    />
+                  </div>
                 </div>
 
-                <!-- Hover glow & bottom border accent -->
-                <div class="absolute bottom-0 left-0 w-full h-[2px] bg-brand-green/50 opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-gradient-to-t from-brand-green/5 to-transparent"></div>
+                <!-- Content -->
+                <div class="brand-card-content flex flex-col flex-1 p-5 lg:p-6">
+                  <p class="text-sm text-gray-400 leading-relaxed flex-1 group-hover:text-gray-300 transition-colors duration-300">
+                    {brand.description}
+                  </p>
+
+                  <!-- External link indicator -->
+                  <div class="mt-4 flex items-center text-xs text-brand-teal/60 group-hover:text-brand-teal transition-colors duration-300">
+                    <span>{lang === 'pl' ? 'Dowiedz się więcej' : 'Learn more'}</span>
+                    <svg class="w-3 h-3 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Hover bottom glow -->
+                <div class="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-teal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </a>
             </AnimateOnScroll>
           ))}
@@ -146,3 +165,28 @@ const brandsTitle = (solutions as any).brandsTitle ?? 'Technologies We Work With
     )}
   </div>
 </section>
+
+<style>
+  .partner-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .partner-glass:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(26, 138, 122, 0.25);
+  }
+
+  .brand-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .brand-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(26, 138, 122, 0.25);
+  }
+  .brand-card-content {
+    background: linear-gradient(to bottom, rgba(6, 11, 20, 0.95), rgba(6, 11, 20, 1));
+  }
+</style>
