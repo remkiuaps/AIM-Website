@@ -19,16 +19,16 @@ export const rawNavLinks: Record<Lang, { label: string; href: string }[]> = {
   pl: [
     { label: 'Strona Główna', href: '/pl/' },
     { label: 'Budynki', href: '/pl/budynki/' },
-    { label: 'Nadzór', href: '/pl/nadzor/' },
     { label: 'Rozwiązania', href: '/pl/rozwiazania/' },
+    { label: 'Nadzór', href: '/pl/nadzor/' },
 
     { label: 'O Nas', href: '/pl/o-nas/' },
   ],
   en: [
     { label: 'Homepage', href: '/en/' },
     { label: 'Buildings', href: '/en/buildings/' },
-    { label: 'Supervision', href: '/en/supervision/' },
     { label: 'Solutions', href: '/en/solutions/' },
+    { label: 'Supervision', href: '/en/supervision/' },
 
     { label: 'About', href: '/en/about/' },
   ],
