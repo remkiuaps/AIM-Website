@@ -283,27 +283,6 @@
         ]
       },
       {
-        "title": "Rozwiązania",
-        "links": [
-          {
-            "label": "AMR & AGV",
-            "href": "/pl/rozwiazania/amr-agv/"
-          },
-          {
-            "label": "Automatyzacja Magazynów",
-            "href": "/pl/rozwiazania/warehouse-automation/"
-          },
-          {
-            "label": "Roboty Usługowe",
-            "href": "/pl/rozwiazania/service-robots/"
-          },
-          {
-            "label": "Inteligentne Bezpieczeństwo",
-            "href": "/pl/rozwiazania/smart-security/"
-          }
-        ]
-      },
-      {
         "title": "Usługi",
         "links": [
           {

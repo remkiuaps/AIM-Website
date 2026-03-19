@@ -257,15 +257,6 @@
         ]
       },
       {
-        "title": "Solutions",
-        "links": [
-          { "label": "AMR & AGV", "href": "/en/solutions/amr-agv/" },
-          { "label": "Warehouse Automation", "href": "/en/solutions/warehouse-automation/" },
-          { "label": "Service Robots", "href": "/en/solutions/service-robots/" },
-          { "label": "Smart Security", "href": "/en/solutions/smart-security/" }
-        ]
-      },
-      {
         "title": "Services",
         "links": [
           { "label": "Buildings", "href": "/en/buildings/" },
