@@ -15,7 +15,7 @@
   },
   "hero": {
     "left": {
-      "title": "Inteligentne Maszyny",
+      "title": "Inteligentne Maszyny (Test)",
       "subtitle": "Automatyzacja dla Przemysłu",
       "cta": "Poznaj Automatyzację",
       "ctaLink": "/pl/rozwiazania/",
@@ -54,7 +54,12 @@
         "title": "AMR & AGV",
         "shortDescription": "Autonomiczne roboty mobilne i pojazdy sterowane automatycznie dla nowoczesnej logistyki.",
         "fullDescription": "Nasze rozwiązania AMR i AGV zapewniają najnowocześniejszą autonomiczną nawigację i obsługę materiałów w magazynach, fabrykach i centrach dystrybucyjnych. Te inteligentne pojazdy optymalizują przepływ pracy, redukują koszty operacyjne i zwiększają produktywność.",
-        "features": ["Autonomiczna nawigacja", "Zarządzanie flotą", "Śledzenie w czasie rzeczywistym", "Unikanie kolizji"],
+        "features": [
+          "Autonomiczna nawigacja",
+          "Zarządzanie flotą",
+          "Śledzenie w czasie rzeczywistym",
+          "Unikanie kolizji"
+        ],
         "image": "/images/solutions/amr-agv-detail.jpg"
       },
       {
@@ -63,7 +68,12 @@
         "title": "Automatyzacja Magazynów",
         "shortDescription": "Kompleksowe rozwiązania automatyzacji magazynów dla maksymalnej wydajności.",
         "fullDescription": "Przekształć operacje magazynowe dzięki naszym kompleksowym rozwiązaniom automatyzacji. Od automatycznych systemów składowania i pobierania po sieci przenośników i systemy sortowania - projektujemy i wdrażamy rozwiązania, które radykalnie poprawiają wydajność.",
-        "features": ["Systemy AS/RS", "Sieci przenośników", "Systemy sortowania", "Integracja WMS"],
+        "features": [
+          "Systemy AS/RS",
+          "Sieci przenośników",
+          "Systemy sortowania",
+          "Integracja WMS"
+        ],
         "image": "/images/solutions/warehouse-detail.jpg"
       },
       {
@@ -72,7 +82,12 @@
         "title": "Roboty Usługowe",
         "shortDescription": "Inteligentna robotyka usługowa dla zastosowań komercyjnych i hotelowych.",
         "fullDescription": "Nasze roboty usługowe wprowadzają automatyzację do środowisk obsługi klienta. Od robotów concierge hotelowych po roboty sprzątające i dostawcze - dostarczamy inteligentne rozwiązania, które poprawiają doświadczenie klienta.",
-        "features": ["Interakcja z klientem", "Autonomiczna dostawa", "Inteligentna nawigacja", "Praca 24/7"],
+        "features": [
+          "Interakcja z klientem",
+          "Autonomiczna dostawa",
+          "Inteligentna nawigacja",
+          "Praca 24/7"
+        ],
         "image": "/images/solutions/service-robots-detail.jpg"
       },
       {
@@ -81,7 +96,12 @@
         "title": "Inteligentne Bezpieczeństwo",
         "shortDescription": "Kompleksowe rozwiązania bezpieczeństwa i monitoringu oparte na AI.",
         "fullDescription": "Chroń swoje zasoby dzięki naszym inteligentnym systemom bezpieczeństwa. Łącząc analitykę wideo opartą na AI, kontrolę dostępu i zintegrowane platformy monitoringu, nasze rozwiązania zapewniają kompleksowe bezpieczeństwo każdego obiektu.",
-        "features": ["Analityka wideo AI", "Kontrola dostępu", "Wykrywanie włamań", "Zdalny monitoring"],
+        "features": [
+          "Analityka wideo AI",
+          "Kontrola dostępu",
+          "Wykrywanie włamań",
+          "Zdalny monitoring"
+        ],
         "image": "/images/solutions/smart-security-detail.jpg"
       }
     ]
@@ -96,7 +116,9 @@
         "shortDescription": "W pełni zautomatyzowany obiekt magazynowy ze zintegrowaną flotą AMR i inteligentnymi systemami zarządzania.",
         "fullDescription": "Najnowocześniejszy obiekt magazynowy wyposażony w w pełni zautomatyzowane systemy składowania i pobierania, flotę autonomicznych robotów mobilnych oraz zintegrowany system zarządzania magazynem. Projekt ten prezentuje naszą zdolność do dostarczania kompleksowych rozwiązań automatyzacji.",
         "image": "/images/projects/modern-warehouse.png",
-        "gallery": ["/images/projects/modern-warehouse.png"],
+        "gallery": [
+          "/images/projects/modern-warehouse.png"
+        ],
         "specs": {
           "area": "5 000 m²",
           "year": "2025",
@@ -110,7 +132,9 @@
         "shortDescription": "Premiumowa instalacja inteligentnego domu z pełną automatyzacją i zarządzaniem budynkiem.",
         "fullDescription": "Luksusowy projekt rezydencjalny obejmujący kompleksową automatyzację inteligentnego domu, w tym systemy oświetlenia, klimatyzacji, bezpieczeństwa, rozrywki i zarządzania energią. Wszystko kontrolowane przez intuicyjny interfejs.",
         "image": "/images/projects/luxury-villa.png",
-        "gallery": ["/images/projects/luxury-villa.png"],
+        "gallery": [
+          "/images/projects/luxury-villa.png"
+        ],
         "specs": {
           "area": "800 m²",
           "year": "2025",
@@ -124,7 +148,9 @@
         "shortDescription": "Inteligentny system hotelowy z automatyczną obsługą gości i zarządzaniem energią.",
         "fullDescription": "Inteligentny system zarządzania hotelem zapewniający automatyczną obsługę gości, optymalizację energii, monitoring bezpieczeństwa i inteligentne sterowanie pokojami. Poprawiamy doświadczenie gości, jednocześnie redukując koszty operacyjne.",
         "image": "/images/projects/business-hotel.png",
-        "gallery": ["/images/projects/business-hotel.png"],
+        "gallery": [
+          "/images/projects/business-hotel.png"
+        ],
         "specs": {
           "area": "12 000 m²",
           "year": "2024",
@@ -138,7 +164,9 @@
         "shortDescription": "Inteligentna automatyka budynkowa dla nowoczesnego kompleksu biurowego.",
         "fullDescription": "Kompleksowy projekt automatyki budynkowej dla wielopiętrowego kompleksu biurowego, obejmujący inteligentne systemy HVAC, oświetlenia, kontroli dostępu i zarządzania przestrzenią roboczą, zaprojektowane dla maksymalnego komfortu i efektywności energetycznej.",
         "image": "/images/projects/office-complex.png",
-        "gallery": ["/images/projects/office-complex.png"],
+        "gallery": [
+          "/images/projects/office-complex.png"
+        ],
         "specs": {
           "area": "25 000 m²",
           "year": "2024",
@@ -239,32 +267,65 @@
       {
         "title": "Firma",
         "links": [
-          { "label": "O Nas", "href": "/pl/o-nas/" },
-          { "label": "Nasze Projekty", "href": "/pl/projekty/" },
-          { "label": "Kontakt", "href": "/pl/kontakt/" }
+          {
+            "label": "O Nas",
+            "href": "/pl/o-nas/"
+          },
+          {
+            "label": "Nasze Projekty",
+            "href": "/pl/projekty/"
+          },
+          {
+            "label": "Kontakt",
+            "href": "/pl/kontakt/"
+          }
         ]
       },
       {
         "title": "Rozwiązania",
         "links": [
-          { "label": "AMR & AGV", "href": "/pl/rozwiazania/amr-agv/" },
-          { "label": "Automatyzacja Magazynów", "href": "/pl/rozwiazania/warehouse-automation/" },
-          { "label": "Roboty Usługowe", "href": "/pl/rozwiazania/service-robots/" },
-          { "label": "Inteligentne Bezpieczeństwo", "href": "/pl/rozwiazania/smart-security/" }
+          {
+            "label": "AMR & AGV",
+            "href": "/pl/rozwiazania/amr-agv/"
+          },
+          {
+            "label": "Automatyzacja Magazynów",
+            "href": "/pl/rozwiazania/warehouse-automation/"
+          },
+          {
+            "label": "Roboty Usługowe",
+            "href": "/pl/rozwiazania/service-robots/"
+          },
+          {
+            "label": "Inteligentne Bezpieczeństwo",
+            "href": "/pl/rozwiazania/smart-security/"
+          }
         ]
       },
       {
         "title": "Usługi",
         "links": [
-          { "label": "Budynki", "href": "/pl/budynki/" },
-          { "label": "Nadzór", "href": "/pl/nadzor/" }
+          {
+            "label": "Budynki",
+            "href": "/pl/budynki/"
+          },
+          {
+            "label": "Nadzór",
+            "href": "/pl/nadzor/"
+          }
         ]
       },
       {
         "title": "Partnerzy",
         "links": [
-          { "label": "Zostań Partnerem", "href": "/pl/kontakt/" },
-          { "label": "Dla Klientów", "href": "/pl/kontakt/" }
+          {
+            "label": "Zostań Partnerem",
+            "href": "/pl/kontakt/"
+          },
+          {
+            "label": "Dla Klientów",
+            "href": "/pl/kontakt/"
+          }
         ]
       }
     ],
