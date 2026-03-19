@@ -200,7 +200,6 @@
     "form": {
       "name": "Your Name",
       "email": "Your Email",
-      "phone": "Phone Number",
       "company": "Company Name",
       "message": "Your Message",
       "submit": "Send Message",
@@ -209,9 +208,39 @@
       "error": "Something went wrong. Please try again or contact us directly via email."
     },
     "info": {
-      "address": "ul. Przykładowa 1, 00-001 Warszawa",
-      "phone": "+48 123 456 789",
-      "email": "contact@aimachine.pl"
+      "companyName": "AI Machine Sp. z o.o.",
+      "address": "Korczunkowa 20, 05-503 Głosków, Poland",
+      "email": "info@aimachine.pl"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "schedule": "Monday – Friday: 8:00 AM – 4:00 PM",
+      "weekend": "Saturday – Sunday: Closed"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What building automation systems do you offer?",
+          "answer": "We specialize in KNX and Loxone systems. We work with premium brands such as Basalte, Ekinex, JUNG, and Gira, offering elegant touch panels, switches, and control systems."
+        },
+        {
+          "question": "Do you carry out projects across Poland?",
+          "answer": "Yes, we deliver projects nationwide. Our headquarters are located in Głosków near Warsaw, but we serve clients from every region."
+        },
+        {
+          "question": "How long does a typical smart home project take?",
+          "answer": "The timeline depends on the project scope. A typical smart home installation takes 2 to 8 weeks. We prepare a detailed schedule before starting any work."
+        },
+        {
+          "question": "Do you offer post-installation service and support?",
+          "answer": "Yes, we provide full technical support, 24/7 system monitoring, and preventive maintenance. Our dedicated team is ready to resolve any issue quickly."
+        },
+        {
+          "question": "What automation protocols do you work with?",
+          "answer": "We primarily work with KNX and Loxone — two leading building automation standards. Both systems are open and allow integration with a wide range of devices from various manufacturers."
+        }
+      ]
     }
   },
   "footer": {

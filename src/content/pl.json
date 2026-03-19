@@ -220,7 +220,6 @@
     "form": {
       "name": "Imię i Nazwisko",
       "email": "Adres Email",
-      "phone": "Numer Telefonu",
       "company": "Nazwa Firmy",
       "message": "Twoja Wiadomość",
       "submit": "Wyślij Wiadomość",
@@ -229,9 +228,39 @@
       "error": "Coś poszło nie tak. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio przez email."
     },
     "info": {
-      "address": "ul. Przykładowa 1, 00-001 Warszawa",
-      "phone": "+48 123 456 789",
-      "email": "kontakt@aimachine.pl"
+      "companyName": "AI Machine Sp. z o.o.",
+      "address": "Korczunkowa 20, 05-503 Głosków, Polska",
+      "email": "info@aimachine.pl"
+    },
+    "hours": {
+      "title": "Godziny pracy",
+      "schedule": "Poniedziałek – Piątek: 8:00 – 16:00",
+      "weekend": "Sobota – Niedziela: Zamknięte"
+    },
+    "faq": {
+      "title": "Najczęściej Zadawane Pytania",
+      "items": [
+        {
+          "question": "Jakie systemy automatyki budynkowej oferujecie?",
+          "answer": "Specjalizujemy się w systemach KNX i Loxone. Współpracujemy z markami premium takimi jak Basalte, Ekinex, JUNG i Gira, oferując eleganckie panele dotykowe, łączniki i systemy sterowania."
+        },
+        {
+          "question": "Czy realizujecie projekty w całej Polsce?",
+          "answer": "Tak, realizujemy projekty na terenie całego kraju. Nasza siedziba znajduje się w Głoskowie pod Warszawą, ale obsługujemy klientów z każdego regionu."
+        },
+        {
+          "question": "Ile trwa typowa realizacja projektu smart home?",
+          "answer": "Czas realizacji zależy od skali projektu. Typowa instalacja smart home trwa od 2 do 8 tygodni. Przed rozpoczęciem prac przygotowujemy szczegółowy harmonogram."
+        },
+        {
+          "question": "Czy oferujecie serwis i wsparcie po instalacji?",
+          "answer": "Tak, zapewniamy pełne wsparcie techniczne, monitoring systemów 24/7 oraz konserwację prewencyjną. Nasz dedykowany zespół jest gotowy szybko rozwiązać każdy problem."
+        },
+        {
+          "question": "Z jakimi protokołami automatyki pracujecie?",
+          "answer": "Pracujemy głównie z KNX i Loxone — dwoma wiodącymi standardami automatyki budynkowej. Oba systemy są otwarte i pozwalają na integrację z szeroką gamą urządzeń różnych producentów."
+        }
+      ]
     }
   },
   "footer": {
