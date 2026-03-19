@@ -1,0 +1,457 @@
+backend:
+  name: github
+  repo: remkiuaps/AIM-Website
+  branch: main
+
+site_url: https://remkiuaps.github.io/AIM-Website/
+display_url: https://remkiuaps.github.io/AIM-Website/
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: content-pl
+    label: "Treść PL"
+    files:
+      - name: pl
+        label: "Polski"
+        file: src/content/pl.json
+        format: json
+        fields:
+          # ── META ──
+          - name: meta
+            label: Meta
+            widget: object
+            fields:
+              - { name: siteTitle, label: Tytuł strony, widget: string }
+              - { name: siteDescription, label: Opis strony, widget: text }
+
+          # ── NAV ──
+          - name: nav
+            label: Nawigacja
+            widget: object
+            fields:
+              - { name: homepage, label: Strona główna, widget: string }
+              - { name: buildings, label: Budynki, widget: string }
+              - { name: supervision, label: Nadzór, widget: string }
+              - { name: solutions, label: Rozwiązania, widget: string }
+              - { name: projects, label: Projekty, widget: string }
+              - { name: about, label: O nas, widget: string }
+              - { name: contact, label: Kontakt, widget: string }
+              - { name: search, label: Szukaj, widget: string }
+
+          # ── HERO ──
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - name: left
+                label: Lewa strona
+                widget: object
+                fields:
+                  - { name: title, label: Tytuł, widget: string }
+                  - { name: subtitle, label: Podtytuł, widget: string }
+                  - { name: cta, label: Przycisk CTA, widget: string }
+                  - { name: ctaLink, label: Link CTA, widget: string }
+                  - { name: image, label: Obraz, widget: image }
+              - name: right
+                label: Prawa strona
+                widget: object
+                fields:
+                  - { name: title, label: Tytuł, widget: string }
+                  - { name: subtitle, label: Podtytuł, widget: string }
+                  - { name: cta, label: Przycisk CTA, widget: string }
+                  - { name: ctaLink, label: Link CTA, widget: string }
+                  - { name: image, label: Obraz, widget: image }
+
+          # ── ABOUT SECTION ──
+          - name: aboutSection
+            label: Sekcja O Nas
+            widget: object
+            fields:
+              - { name: companyName, label: Nazwa firmy, widget: string }
+              - { name: description, label: Opis, widget: text }
+              - name: features
+                label: Cechy
+                widget: list
+                fields:
+                  - { name: icon, label: Ikona, widget: string }
+                  - { name: title, label: Tytuł, widget: string }
+                  - { name: description, label: Opis, widget: string }
+
+          # ── SOLUTIONS ──
+          - name: solutions
+            label: Rozwiązania
+            widget: object
+            fields:
+              - { name: sectionTitle, label: Tytuł sekcji, widget: string }
+              - name: items
+                label: Pozycje
+                widget: list
+                fields:
+                  - { name: slug, label: Slug, widget: string }
+                  - { name: icon, label: Ikona, widget: image }
+                  - { name: title, label: Tytuł, widget: string }
+                  - { name: shortDescription, label: Krótki opis, widget: text }
+                  - { name: fullDescription, label: Pełny opis, widget: text }
+                  - { name: features, label: Cechy, widget: list, field: { name: feature, label: Cecha, widget: string } }
+                  - { name: image, label: Obraz, widget: image }
+
+          # ── PROJECTS ──
+          - name: projects
+            label: Projekty
+            widget: object
+            fields:
+              - { name: sectionTitle, label: Tytuł sekcji, widget: string }
+              - name: items
+                label: Pozycje
+                widget: list
+                fields:
+                  - { name: slug, label: Slug, widget: string }
+                  - { name: title, label: Tytuł, widget: string }
+                  - { name: category, label: Kategoria, widget: string }
+                  - { name: shortDescription, label: Krótki opis, widget: text }
+                  - { name: fullDescription, label: Pełny opis, widget: text }
+                  - { name: image, label: Obraz główny, widget: image }
+                  - { name: gallery, label: Galeria, widget: list, field: { name: photo, label: Zdjęcie, widget: image } }
+                  - name: specs
+                    label: Specyfikacja
+                    widget: object
+                    fields:
+                      - { name: area, label: Powierzchnia, widget: string }
+                      - { name: year, label: Rok, widget: string }
+                      - { name: location, label: Lokalizacja, widget: string }
+
+          # ── BUILDINGS ──
+          - name: buildings
+            label: Budynki
+            widget: object
+            fields:
+              - { name: heroTitle, label: Tytuł hero, widget: string }
+              - { name: heroSubtitle, label: Podtytuł hero, widget: string }
+              - { name: heroImage, label: Obraz hero, widget: image }
+              - { name: heroVideo, label: Wideo hero (ścieżka), widget: string }
+              - { name: description, label: Opis, widget: text }
+              - name: sections
+                label: Sekcje
+                widget: list
+                fields:
+                  - { name: title, label: Tytuł, widget: string }
+                  - { name: description, label: Opis, widget: text }
+                  - { name: image, label: Obraz, widget: image }
+
+          # ── SUPERVISION ──
+          - name: supervision
+            label: Nadzór
+            widget: object
+            fields:
+              - { name: heroTitle, label: Tytuł hero, widget: string }
+              - { name: heroSubtitle, label: Podtytuł hero, widget: string }
+              - { name: heroImage, label: Obraz hero, widget: image }
+              - { name: heroVideo, label: Wideo hero (ścieżka), widget: string }
+              - { name: description, label: Opis, widget: text }
+              - name: sections
+                label: Sekcje
+                widget: list
+                fields:
+                  - { name: title, label: Tytuł, widget: string }
+                  - { name: description, label: Opis, widget: text }
+                  - { name: image, label: Obraz, widget: image }
+
+          # ── ABOUT PAGE ──
+          - name: aboutPage
+            label: Strona O Nas
+            widget: object
+            fields:
+              - { name: title, label: Tytuł, widget: string }
+              - { name: subtitle, label: Podtytuł, widget: string }
+              - { name: story, label: Historia, widget: text }
+              - { name: mission, label: Misja, widget: text }
+              - name: values
+                label: Wartości
+                widget: list
+                fields:
+                  - { name: title, label: Tytuł, widget: string }
+                  - { name: description, label: Opis, widget: text }
+
+          # ── CONTACT PAGE ──
+          - name: contactPage
+            label: Strona Kontakt
+            widget: object
+            fields:
+              - { name: title, label: Tytuł, widget: string }
+              - { name: subtitle, label: Podtytuł, widget: string }
+              - { name: description, label: Opis, widget: text }
+              - name: form
+                label: Formularz
+                widget: object
+                fields:
+                  - { name: name, label: Pole Imię, widget: string }
+                  - { name: email, label: Pole Email, widget: string }
+                  - { name: phone, label: Pole Telefon, widget: string }
+                  - { name: company, label: Pole Firma, widget: string }
+                  - { name: message, label: Pole Wiadomość, widget: string }
+                  - { name: submit, label: Przycisk Wyślij, widget: string }
+                  - { name: sending, label: Tekst wysyłania, widget: string }
+                  - { name: success, label: Tekst sukcesu, widget: text }
+                  - { name: error, label: Tekst błędu, widget: text }
+              - name: info
+                label: Dane kontaktowe
+                widget: object
+                fields:
+                  - { name: address, label: Adres, widget: string }
+                  - { name: phone, label: Telefon, widget: string }
+                  - { name: email, label: Email, widget: string }
+
+          # ── FOOTER ──
+          - name: footer
+            label: Stopka
+            widget: object
+            fields:
+              - { name: ctaTitle, label: Tytuł CTA, widget: string }
+              - { name: ctaBrand, label: Marka CTA, widget: string }
+              - { name: ctaButton, label: Przycisk CTA, widget: string }
+              - name: columns
+                label: Kolumny
+                widget: list
+                fields:
+                  - { name: title, label: Tytuł kolumny, widget: string }
+                  - name: links
+                    label: Linki
+                    widget: list
+                    fields:
+                      - { name: label, label: Etykieta, widget: string }
+                      - { name: href, label: Link, widget: string }
+              - name: social
+                label: Media społecznościowe
+                widget: object
+                fields:
+                  - { name: facebook, label: Facebook, widget: string }
+                  - { name: twitter, label: Twitter/X, widget: string }
+                  - { name: instagram, label: Instagram, widget: string }
+                  - { name: youtube, label: YouTube, widget: string }
+              - { name: copyright, label: Copyright, widget: string }
+              - { name: tagline, label: Tagline, widget: string }
+
+  - name: content-en
+    label: "Content EN"
+    files:
+      - name: en
+        label: "English"
+        file: src/content/en.json
+        format: json
+        fields:
+          # ── META ──
+          - name: meta
+            label: Meta
+            widget: object
+            fields:
+              - { name: siteTitle, label: Site Title, widget: string }
+              - { name: siteDescription, label: Site Description, widget: text }
+
+          # ── NAV ──
+          - name: nav
+            label: Navigation
+            widget: object
+            fields:
+              - { name: homepage, label: Homepage, widget: string }
+              - { name: buildings, label: Buildings, widget: string }
+              - { name: supervision, label: Supervision, widget: string }
+              - { name: solutions, label: Solutions, widget: string }
+              - { name: projects, label: Projects, widget: string }
+              - { name: about, label: About, widget: string }
+              - { name: contact, label: Contact, widget: string }
+              - { name: search, label: Search, widget: string }
+
+          # ── HERO ──
+          - name: hero
+            label: Hero
+            widget: object
+            fields:
+              - name: left
+                label: Left side
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: subtitle, label: Subtitle, widget: string }
+                  - { name: cta, label: CTA Button, widget: string }
+                  - { name: ctaLink, label: CTA Link, widget: string }
+                  - { name: image, label: Image, widget: image }
+              - name: right
+                label: Right side
+                widget: object
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: subtitle, label: Subtitle, widget: string }
+                  - { name: cta, label: CTA Button, widget: string }
+                  - { name: ctaLink, label: CTA Link, widget: string }
+                  - { name: image, label: Image, widget: image }
+
+          # ── ABOUT SECTION ──
+          - name: aboutSection
+            label: About Section
+            widget: object
+            fields:
+              - { name: companyName, label: Company Name, widget: string }
+              - { name: description, label: Description, widget: text }
+              - name: features
+                label: Features
+                widget: list
+                fields:
+                  - { name: icon, label: Icon, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: description, label: Description, widget: string }
+
+          # ── SOLUTIONS ──
+          - name: solutions
+            label: Solutions
+            widget: object
+            fields:
+              - { name: sectionTitle, label: Section Title, widget: string }
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - { name: slug, label: Slug, widget: string }
+                  - { name: icon, label: Icon, widget: image }
+                  - { name: title, label: Title, widget: string }
+                  - { name: shortDescription, label: Short Description, widget: text }
+                  - { name: fullDescription, label: Full Description, widget: text }
+                  - { name: features, label: Features, widget: list, field: { name: feature, label: Feature, widget: string } }
+                  - { name: image, label: Image, widget: image }
+
+          # ── PROJECTS ──
+          - name: projects
+            label: Projects
+            widget: object
+            fields:
+              - { name: sectionTitle, label: Section Title, widget: string }
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - { name: slug, label: Slug, widget: string }
+                  - { name: title, label: Title, widget: string }
+                  - { name: category, label: Category, widget: string }
+                  - { name: shortDescription, label: Short Description, widget: text }
+                  - { name: fullDescription, label: Full Description, widget: text }
+                  - { name: image, label: Main Image, widget: image }
+                  - { name: gallery, label: Gallery, widget: list, field: { name: photo, label: Photo, widget: image } }
+                  - name: specs
+                    label: Specifications
+                    widget: object
+                    fields:
+                      - { name: area, label: Area, widget: string }
+                      - { name: year, label: Year, widget: string }
+                      - { name: location, label: Location, widget: string }
+
+          # ── BUILDINGS ──
+          - name: buildings
+            label: Buildings
+            widget: object
+            fields:
+              - { name: heroTitle, label: Hero Title, widget: string }
+              - { name: heroSubtitle, label: Hero Subtitle, widget: string }
+              - { name: heroImage, label: Hero Image, widget: image }
+              - { name: heroVideo, label: Hero Video (path), widget: string }
+              - { name: description, label: Description, widget: text }
+              - name: sections
+                label: Sections
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: description, label: Description, widget: text }
+                  - { name: image, label: Image, widget: image }
+
+          # ── SUPERVISION ──
+          - name: supervision
+            label: Supervision
+            widget: object
+            fields:
+              - { name: heroTitle, label: Hero Title, widget: string }
+              - { name: heroSubtitle, label: Hero Subtitle, widget: string }
+              - { name: heroImage, label: Hero Image, widget: image }
+              - { name: heroVideo, label: Hero Video (path), widget: string }
+              - { name: description, label: Description, widget: text }
+              - name: sections
+                label: Sections
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: description, label: Description, widget: text }
+                  - { name: image, label: Image, widget: image }
+
+          # ── ABOUT PAGE ──
+          - name: aboutPage
+            label: About Page
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: subtitle, label: Subtitle, widget: string }
+              - { name: story, label: Story, widget: text }
+              - { name: mission, label: Mission, widget: text }
+              - name: values
+                label: Values
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: description, label: Description, widget: text }
+
+          # ── CONTACT PAGE ──
+          - name: contactPage
+            label: Contact Page
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: subtitle, label: Subtitle, widget: string }
+              - { name: description, label: Description, widget: text }
+              - name: form
+                label: Form
+                widget: object
+                fields:
+                  - { name: name, label: Name Field, widget: string }
+                  - { name: email, label: Email Field, widget: string }
+                  - { name: phone, label: Phone Field, widget: string }
+                  - { name: company, label: Company Field, widget: string }
+                  - { name: message, label: Message Field, widget: string }
+                  - { name: submit, label: Submit Button, widget: string }
+                  - { name: sending, label: Sending Text, widget: string }
+                  - { name: success, label: Success Text, widget: text }
+                  - { name: error, label: Error Text, widget: text }
+              - name: info
+                label: Contact Info
+                widget: object
+                fields:
+                  - { name: address, label: Address, widget: string }
+                  - { name: phone, label: Phone, widget: string }
+                  - { name: email, label: Email, widget: string }
+
+          # ── FOOTER ──
+          - name: footer
+            label: Footer
+            widget: object
+            fields:
+              - { name: ctaTitle, label: CTA Title, widget: string }
+              - { name: ctaBrand, label: CTA Brand, widget: string }
+              - { name: ctaButton, label: CTA Button, widget: string }
+              - name: columns
+                label: Columns
+                widget: list
+                fields:
+                  - { name: title, label: Column Title, widget: string }
+                  - name: links
+                    label: Links
+                    widget: list
+                    fields:
+                      - { name: label, label: Label, widget: string }
+                      - { name: href, label: Link, widget: string }
+              - name: social
+                label: Social Media
+                widget: object
+                fields:
+                  - { name: facebook, label: Facebook, widget: string }
+                  - { name: twitter, label: Twitter/X, widget: string }
+                  - { name: instagram, label: Instagram, widget: string }
+                  - { name: youtube, label: YouTube, widget: string }
+              - { name: copyright, label: Copyright, widget: string }
+              - { name: tagline, label: Tagline, widget: string }
