@@ -94,40 +94,60 @@
     ],
     "items": [
       {
-        "slug": "amr-agv",
-        "icon": "/images/solutions/amr-agv-icon.png",
-        "title": "AMR & AGV",
-        "shortDescription": "Autonomous mobile robots and automated guided vehicles for modern logistics.",
-        "fullDescription": "Our AMR & AGV solutions provide cutting-edge autonomous navigation and material handling for warehouses, factories, and distribution centers. These intelligent vehicles optimize workflow, reduce operational costs, and increase productivity.",
-        "features": ["Autonomous navigation", "Fleet management", "Real-time tracking", "Collision avoidance"],
-        "image": "/images/solutions/amr-agv-detail.jpg"
+        "slug": "lighting-shading",
+        "icon": "/images/solutions/lighting-shading-icon.png",
+        "title": "Intelligent Lighting & Shading",
+        "shortDescription": "Automated light and shading control with JUNG, Gira, and Basalte panels.",
+        "fullDescription": "We design KNX and Loxone-based lighting and shading systems that adapt to the time of day, occupancy, and user preferences. Using premium Basalte touch panels, JUNG and Gira switches, and Loxone sensors, we create intuitive, energy-efficient lighting environments in every room.",
+        "features": [
+          "Lighting scenes & schedules",
+          "Blind & shutter control",
+          "Occupancy & daylight sensors",
+          "Basalte & JUNG touch panels"
+        ],
+        "image": "/images/solutions/lighting-shading-detail.jpg"
       },
       {
-        "slug": "warehouse-automation",
-        "icon": "/images/solutions/warehouse-icon.png",
-        "title": "Warehouse Automation",
-        "shortDescription": "End-to-end warehouse automation solutions for maximum efficiency.",
-        "fullDescription": "Transform your warehouse operations with our comprehensive automation solutions. From automated storage and retrieval systems to conveyor networks and sortation systems, we design and implement solutions that dramatically improve throughput.",
-        "features": ["AS/RS Systems", "Conveyor networks", "Sortation systems", "WMS Integration"],
-        "image": "/images/solutions/warehouse-detail.jpg"
+        "slug": "climate-energy",
+        "icon": "/images/solutions/climate-energy-icon.png",
+        "title": "Climate & Energy Management",
+        "shortDescription": "Intelligent climate control and energy optimization with Loxone and KNX.",
+        "fullDescription": "Our climate and energy management systems ensure optimal thermal comfort with minimal energy consumption. We integrate heat pumps, ventilation, underfloor heating, and air conditioning into one cohesive system controlled by Loxone or KNX. Real-time energy monitoring with Ekinex visualization lets you make informed decisions about energy costs.",
+        "features": [
+          "Zone-based temperature control",
+          "Real-time energy monitoring",
+          "Heat pump & PV integration",
+          "Ekinex visualization & reports"
+        ],
+        "image": "/images/solutions/climate-energy-detail.jpg"
       },
       {
-        "slug": "service-robots",
-        "icon": "/images/solutions/service-robots-icon.png",
-        "title": "Service Robots",
-        "shortDescription": "Intelligent service robotics for commercial and hospitality applications.",
-        "fullDescription": "Our service robots bring automation to customer-facing environments. From hotel concierge robots to commercial cleaning and delivery robots, we provide intelligent solutions that enhance customer experience.",
-        "features": ["Customer interaction", "Autonomous delivery", "Intelligent navigation", "24/7 operation"],
-        "image": "/images/solutions/service-robots-detail.jpg"
+        "slug": "security-access",
+        "icon": "/images/solutions/security-access-icon.png",
+        "title": "Security & Access Control",
+        "shortDescription": "Integrated alarm systems, video surveillance, and access control.",
+        "fullDescription": "We provide comprehensive building security by combining alarm systems, IP cameras, video intercoms, and access control into one integrated platform. Through KNX and Loxone integration, the security system works with lighting, shading, and notifications — automatically responding to events and giving you full control from your smartphone.",
+        "features": [
+          "Alarm system with notifications",
+          "IP video surveillance",
+          "Video intercom & access control",
+          "Occupancy simulation"
+        ],
+        "image": "/images/solutions/security-access-detail.jpg"
       },
       {
-        "slug": "smart-security",
-        "icon": "/images/solutions/smart-security-icon.png",
-        "title": "Smart Security",
-        "shortDescription": "Comprehensive AI-powered security and surveillance solutions.",
-        "fullDescription": "Protect your assets with our intelligent security systems. Combining AI-powered video analytics, access control, and integrated monitoring platforms, our solutions provide comprehensive security for any facility.",
-        "features": ["AI video analytics", "Access control", "Intrusion detection", "Remote monitoring"],
-        "image": "/images/solutions/smart-security-detail.jpg"
+        "slug": "home-automation-av",
+        "icon": "/images/solutions/home-automation-av-icon.png",
+        "title": "Home Automation & Multiroom AV",
+        "shortDescription": "Centralized whole-home control and multiroom audio with Basalte and Loxone.",
+        "fullDescription": "We build complete home automation systems that integrate all installations into a single interface. Basalte touch panels, the Loxone app, and KNX systems provide intuitive control from anywhere. The Basalte multiroom audio system and Loxone Music Server deliver premium-quality music to every room, with individual source and volume selection.",
+        "features": [
+          "Single-app whole-home control",
+          "Basalte multiroom audio",
+          "Scenes & automations",
+          "KNX, Loxone & Gira integration"
+        ],
+        "image": "/images/solutions/home-automation-av-detail.jpg"
       }
     ]
   },

@@ -14,7 +14,45 @@ const content = getContent(lang);
 const solutions = content.solutions;
 const solutionsBase = url(lang === 'pl' ? '/pl/rozwiazania' : '/en/solutions');
 
-const blueIcons = new Set(['amr-agv', 'warehouse-automation']);
+const solutionColors: Record<string, { border: string; text: string; icon: string; line: string; glow: string }> = {
+  'lighting-shading': {
+    border: 'hover:border-amber-400/30',
+    text: 'group-hover:text-amber-300',
+    icon: 'group-hover:text-amber-400',
+    line: 'bg-amber-400/80',
+    glow: 'bg-gradient-to-t from-amber-400/10 to-transparent',
+  },
+  'climate-energy': {
+    border: 'hover:border-teal-400/30',
+    text: 'group-hover:text-teal-300',
+    icon: 'group-hover:text-teal-400',
+    line: 'bg-teal-400/80',
+    glow: 'bg-gradient-to-t from-teal-400/10 to-transparent',
+  },
+  'security-access': {
+    border: 'hover:border-blue-400/30',
+    text: 'group-hover:text-blue-300',
+    icon: 'group-hover:text-blue-400',
+    line: 'bg-blue-400/80',
+    glow: 'bg-gradient-to-t from-blue-400/10 to-transparent',
+  },
+  'home-automation-av': {
+    border: 'hover:border-purple-400/30',
+    text: 'group-hover:text-purple-300',
+    icon: 'group-hover:text-purple-400',
+    line: 'bg-purple-400/80',
+    glow: 'bg-gradient-to-t from-purple-400/10 to-transparent',
+  },
+};
+
+const solutionIcons: Record<string, string> = {
+  'lighting-shading': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="1 0 22 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M12 2v5"/><path d="M14.829 15.998a3 3 0 1 1-5.658 0"/><path d="M20.92 14.606A1 1 0 0 1 20 16H4a1 1 0 0 1-.92-1.394l3-7A1 1 0 0 1 7 7h10a1 1 0 0 1 .92.606z"/></svg>`,
+  'climate-energy': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M12 2v2"/><path d="M12 8a4 4 0 0 0-1.645 7.647"/><path d="M2 12h2"/><path d="M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z"/><path d="m4.93 4.93 1.41 1.41"/><path d="m6.34 17.66-1.41 1.41"/></svg>`,
+  'security-access': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>`,
+  'home-automation-av': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M10 12V8.964"/><path d="M14 12V8.964"/><path d="M15 12a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2a1 1 0 0 1 1-1z"/><path d="M8.5 21H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2v-2"/></svg>`,
+};
+
+const defaultColors = { border: 'hover:border-brand-teal/30', text: 'group-hover:text-brand-green', icon: 'group-hover:text-brand-green', line: 'bg-brand-green/80', glow: 'bg-gradient-to-t from-brand-green/10 to-transparent' };
 
 const partners = (solutions as any).partners ?? [];
 const brands = (solutions as any).brands ?? [];
@@ -29,39 +67,49 @@ const brandsTitle = (solutions as any).brandsTitle ?? 'Technologies We Work With
 
     {!hideSolutionsGrid && (
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-        {solutions.items.map((solution, index) => (
-          <AnimateOnScroll animation="fade-up" delay={index * 100}>
-            <a
-              href={`${solutionsBase}/${solution.slug}/`}
-              class:list={[
-                'group relative flex flex-col items-center justify-center py-8 px-4 rounded-xl bg-[#0a0f16] border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden',
-                blueIcons.has(solution.slug) ? 'hover:border-brand-blue/30' : 'hover:border-brand-teal/30',
-              ]}
-            >
-              <div class="flex items-center justify-center w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-110">
-                <img
-                  src={url(solution.icon)}
-                  alt={solution.title}
-                  class="w-full h-full object-contain mix-blend-screen drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]"
-                />
+        {solutions.items.map((solution, index) => {
+          const colors = solutionColors[solution.slug] ?? defaultColors;
+          const iconSvg = solutionIcons[solution.slug];
+          return (
+            <AnimateOnScroll animation="fade-up" delay={index * 100} class="h-full">
+              <div
+                class:list={[
+                  'h-full group relative flex flex-col items-center justify-center py-8 px-4 rounded-xl bg-[#0a0f16] border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden',
+                  colors.border,
+                ]}
+              >
+                <div class:list={[
+                  'flex items-center justify-center w-24 h-24 mb-4 transition-all duration-300 group-hover:scale-110 text-gray-400 drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]',
+                  colors.icon,
+                ]}>
+                  {iconSvg ? (
+                    <Fragment set:html={iconSvg} />
+                  ) : (
+                    <img
+                      src={url(solution.icon)}
+                      alt={solution.title}
+                      class="w-full h-full object-contain mix-blend-screen"
+                    />
+                  )}
+                </div>
+                <h3 class:list={[
+                  'text-sm sm:text-base font-medium text-gray-200 text-center transition-colors',
+                  colors.text,
+                ]}>
+                  {solution.title}
+                </h3>
+                <div class:list={[
+                  'absolute bottom-0 left-0 w-full h-[2px] opacity-50 group-hover:opacity-100 transition-opacity duration-300',
+                  colors.line,
+                ]}></div>
+                <div class:list={[
+                  'absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none',
+                  colors.glow,
+                ]}></div>
               </div>
-              <h3 class:list={[
-                'text-sm sm:text-base font-medium text-gray-200 text-center transition-colors',
-                blueIcons.has(solution.slug) ? 'group-hover:text-brand-blue-light' : 'group-hover:text-brand-green',
-              ]}>
-                {solution.title}
-              </h3>
-              <div class:list={[
-                'absolute bottom-0 left-0 w-full h-[2px] opacity-50 group-hover:opacity-100 transition-opacity duration-300',
-                blueIcons.has(solution.slug) ? 'bg-brand-blue/80' : 'bg-brand-green/80',
-              ]}></div>
-              <div class:list={[
-                'absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none',
-                blueIcons.has(solution.slug) ? 'bg-gradient-to-t from-brand-blue/10 to-transparent' : 'bg-gradient-to-t from-brand-green/10 to-transparent',
-              ]}></div>
-            </a>
-          </AnimateOnScroll>
-        ))}
+            </AnimateOnScroll>
+          );
+        })}
       </div>
     )}
 

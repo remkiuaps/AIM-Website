@@ -94,60 +94,60 @@
     ],
     "items": [
       {
-        "slug": "amr-agv",
-        "icon": "/images/solutions/amr-agv-icon.png",
-        "title": "AMR & AGV",
-        "shortDescription": "Autonomiczne roboty mobilne i pojazdy sterowane automatycznie dla nowoczesnej logistyki.",
-        "fullDescription": "Nasze rozwiązania AMR i AGV zapewniają najnowocześniejszą autonomiczną nawigację i obsługę materiałów w magazynach, fabrykach i centrach dystrybucyjnych. Te inteligentne pojazdy optymalizują przepływ pracy, redukują koszty operacyjne i zwiększają produktywność.",
+        "slug": "lighting-shading",
+        "icon": "/images/solutions/lighting-shading-icon.png",
+        "title": "Inteligentne Oświetlenie i Rolety",
+        "shortDescription": "Automatyczne sterowanie światłem i roletami z panelami JUNG, Gira i Basalte.",
+        "fullDescription": "Projektujemy systemy oświetlenia i sterowania roletami oparte na KNX i Loxone, które dostosowują się do pory dnia, obecności i preferencji użytkownika. Wykorzystujemy premiumowe panele dotykowe Basalte, łączniki JUNG i Gira oraz czujniki Loxone, aby stworzyć intuicyjne i energooszczędne środowisko świetlne w każdym pomieszczeniu.",
         "features": [
-          "Autonomiczna nawigacja",
-          "Zarządzanie flotą",
-          "Śledzenie w czasie rzeczywistym",
-          "Unikanie kolizji"
+          "Sceny świetlne i harmonogramy",
+          "Sterowanie roletami i żaluzjami",
+          "Czujniki obecności i natężenia światła",
+          "Panele dotykowe Basalte i JUNG"
         ],
-        "image": "/images/solutions/amr-agv-detail.jpg"
+        "image": "/images/solutions/lighting-shading-detail.jpg"
       },
       {
-        "slug": "warehouse-automation",
-        "icon": "/images/solutions/warehouse-icon.png",
-        "title": "Automatyzacja Magazynów",
-        "shortDescription": "Kompleksowe rozwiązania automatyzacji magazynów dla maksymalnej wydajności.",
-        "fullDescription": "Przekształć operacje magazynowe dzięki naszym kompleksowym rozwiązaniom automatyzacji. Od automatycznych systemów składowania i pobierania po sieci przenośników i systemy sortowania - projektujemy i wdrażamy rozwiązania, które radykalnie poprawiają wydajność.",
+        "slug": "climate-energy",
+        "icon": "/images/solutions/climate-energy-icon.png",
+        "title": "Klimatyzacja i Zarządzanie Energią",
+        "shortDescription": "Inteligentne sterowanie klimatem i optymalizacja zużycia energii z Loxone i KNX.",
+        "fullDescription": "Nasze systemy klimatyzacji i zarządzania energią zapewniają optymalny komfort termiczny przy minimalnym zużyciu energii. Integrujemy pompy ciepła, rekuperację, ogrzewanie podłogowe i klimatyzację w jeden spójny system sterowany przez Loxone lub KNX. Monitoring energii w czasie rzeczywistym z wizualizacją Ekinex pozwala świadomie zarządzać kosztami.",
         "features": [
-          "Systemy AS/RS",
-          "Sieci przenośników",
-          "Systemy sortowania",
-          "Integracja WMS"
+          "Strefowe sterowanie temperaturą",
+          "Monitoring zużycia energii",
+          "Integracja z pompami ciepła i PV",
+          "Wizualizacja i raporty Ekinex"
         ],
-        "image": "/images/solutions/warehouse-detail.jpg"
+        "image": "/images/solutions/climate-energy-detail.jpg"
       },
       {
-        "slug": "service-robots",
-        "icon": "/images/solutions/service-robots-icon.png",
-        "title": "Roboty Usługowe",
-        "shortDescription": "Inteligentna robotyka usługowa dla zastosowań komercyjnych i hotelowych.",
-        "fullDescription": "Nasze roboty usługowe wprowadzają automatyzację do środowisk obsługi klienta. Od robotów concierge hotelowych po roboty sprzątające i dostawcze - dostarczamy inteligentne rozwiązania, które poprawiają doświadczenie klienta.",
+        "slug": "security-access",
+        "icon": "/images/solutions/security-access-icon.png",
+        "title": "Bezpieczeństwo i Kontrola Dostępu",
+        "shortDescription": "Zintegrowane systemy alarmowe, monitoring wideo i kontrola dostępu.",
+        "fullDescription": "Zapewniamy kompleksowe bezpieczeństwo budynku łącząc systemy alarmowe, kamery IP, widedomofony i kontrolę dostępu w jeden zintegrowany system. Dzięki integracji z KNX i Loxone, system bezpieczeństwa współpracuje z oświetleniem, roletami i powiadomieniami — automatycznie reagując na zdarzenia i zapewniając pełną kontrolę z poziomu smartfona.",
         "features": [
-          "Interakcja z klientem",
-          "Autonomiczna dostawa",
-          "Inteligentna nawigacja",
-          "Praca 24/7"
+          "System alarmowy z powiadomieniami",
+          "Monitoring wideo IP",
+          "Widedomofony i kontrola dostępu",
+          "Symulacja obecności"
         ],
-        "image": "/images/solutions/service-robots-detail.jpg"
+        "image": "/images/solutions/security-access-detail.jpg"
       },
       {
-        "slug": "smart-security",
-        "icon": "/images/solutions/smart-security-icon.png",
-        "title": "Inteligentne Bezpieczeństwo",
-        "shortDescription": "Kompleksowe rozwiązania bezpieczeństwa i monitoringu oparte na AI.",
-        "fullDescription": "Chroń swoje zasoby dzięki naszym inteligentnym systemom bezpieczeństwa. Łącząc analitykę wideo opartą na AI, kontrolę dostępu i zintegrowane platformy monitoringu, nasze rozwiązania zapewniają kompleksowe bezpieczeństwo każdego obiektu.",
+        "slug": "home-automation-av",
+        "icon": "/images/solutions/home-automation-av-icon.png",
+        "title": "Automatyka Domowa i Multiroom AV",
+        "shortDescription": "Centralne sterowanie całym domem i system audio multiroom z Basalte i Loxone.",
+        "fullDescription": "Tworzymy kompletne systemy automatyki domowej, które integrują wszystkie instalacje w jednym interfejsie. Panele dotykowe Basalte, aplikacja Loxone i systemy KNX zapewniają intuicyjne sterowanie z każdego miejsca. System multiroom audio Basalte i Loxone Music Server dostarczają muzykę w najwyższej jakości do każdego pomieszczenia, z indywidualnym wyborem źródeł i głośności.",
         "features": [
-          "Analityka wideo AI",
-          "Kontrola dostępu",
-          "Wykrywanie włamań",
-          "Zdalny monitoring"
+          "Centralne sterowanie z jednej aplikacji",
+          "Multiroom audio Basalte",
+          "Scenariusze i automatyzacje",
+          "Integracja KNX, Loxone i Gira"
         ],
-        "image": "/images/solutions/smart-security-detail.jpg"
+        "image": "/images/solutions/home-automation-av-detail.jpg"
       }
     ]
   },
