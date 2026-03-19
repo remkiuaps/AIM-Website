@@ -16,7 +16,7 @@ const hero = content.hero;
     <div id="hero-slider-track" class="hero-slider-track flex lg:block min-h-[calc(100vh-5rem)]">
 
       <!-- Left Panel - Intelligent Machines -->
-      <div class="hero-panel-left min-w-full shrink-0 grow-0 basis-full relative group overflow-hidden min-h-[calc(100vh-5rem)] lg:min-h-full lg:absolute lg:inset-0 lg:w-full lg:min-w-0 lg:basis-auto">
+      <div class="hero-panel-left relative group overflow-hidden min-h-[calc(100vh-5rem)] lg:min-h-full lg:absolute lg:inset-0 lg:w-full">
         <!-- Background image -->
         <div class="absolute inset-0 lg:right-auto lg:w-[53%] bg-brand-dark">
           <img
@@ -53,7 +53,7 @@ const hero = content.hero;
       </div>
 
       <!-- Right Panel - Intelligent Buildings -->
-      <div class="hero-panel-right min-w-full shrink-0 grow-0 basis-full relative group overflow-hidden min-h-[calc(100vh-5rem)] lg:min-h-full lg:absolute lg:inset-0 lg:w-full lg:min-w-0 lg:basis-auto">
+      <div class="hero-panel-right relative group overflow-hidden min-h-[calc(100vh-5rem)] lg:min-h-full lg:absolute lg:inset-0 lg:w-full">
         <!-- Background image -->
         <div class="absolute inset-0 lg:left-auto lg:w-[53%] bg-brand-dark">
           <img
@@ -136,7 +136,18 @@ const hero = content.hero;
     }
   }
 
-  /* Mobile slider track */
+  /* Mobile slider */
+  @media (max-width: 1023px) {
+    .hero-slider-track {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .hero-panel-left,
+    .hero-panel-right {
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
+  }
   .hero-slider-track {
     transition: transform 0.5s ease-in-out;
   }
@@ -184,8 +195,9 @@ const hero = content.hero;
   (function () {
     const track = document.getElementById('hero-slider-track');
     const dots = document.querySelectorAll<HTMLButtonElement>('.hero-dot');
-    if (!track || dots.length === 0) return;
+    if (!track) return;
 
+    const panels = track.querySelectorAll<HTMLElement>('.hero-panel-left, .hero-panel-right');
     const INTERVAL = 5000;
     const SWIPE_THRESHOLD = 50;
     const TOTAL = 2;
@@ -194,6 +206,27 @@ const hero = content.hero;
     let startX = 0;
 
     const isMobile = () => window.innerWidth < 1024;
+
+    function applyMobileLayout() {
+      track.style.display = 'flex';
+      track.style.flexWrap = 'nowrap';
+      panels.forEach((p) => {
+        p.style.flex = '0 0 100%';
+        p.style.minWidth = '100%';
+        p.style.width = '100%';
+      });
+    }
+
+    function clearMobileLayout() {
+      track.style.display = '';
+      track.style.flexWrap = '';
+      track.style.transform = '';
+      panels.forEach((p) => {
+        p.style.flex = '';
+        p.style.minWidth = '';
+        p.style.width = '';
+      });
+    }
 
     function goTo(i: number) {
       current = i;
@@ -247,16 +280,20 @@ const hero = content.hero;
     const mql = window.matchMedia('(max-width: 1023px)');
     mql.addEventListener('change', (e) => {
       if (e.matches) {
+        applyMobileLayout();
         goTo(current);
         startAuto();
       } else {
         stopAuto();
-        track.style.transform = '';
+        clearMobileLayout();
       }
     });
 
     // Init
-    if (isMobile()) startAuto();
+    if (isMobile()) {
+      applyMobileLayout();
+      startAuto();
+    }
   })();
 
   // Scroll arrow
