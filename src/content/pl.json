@@ -233,9 +233,11 @@
       "companyLabel": "Firma",
       "addressLabel": "Adres",
       "emailLabel": "Email",
+      "phoneLabel": "Telefon",
       "companyName": "AI Machine Sp. z o.o.",
       "address": "Korczunkowa 20, 05-503 Głosków, Polska",
-      "email": "info@aimachine.pl"
+      "email": "info@aimachine.pl",
+      "phone": "+48 736 288 285"
     },
     "hours": {
       "title": "Godziny pracy",
