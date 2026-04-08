@@ -10,9 +10,11 @@ export const routeMap: Record<string, Record<Lang, string>> = {
   buildings:   { pl: 'budynki',      en: 'buildings' },
   supervision: { pl: 'nadzor',       en: 'supervision' },
   solutions:   { pl: 'rozwiazania',  en: 'solutions' },
+  projects:    { pl: 'projekty',     en: 'projects' },
 
   about:       { pl: 'o-nas',        en: 'about' },
   contact:     { pl: 'kontakt',      en: 'contact' },
+  privacy:     { pl: 'polityka-prywatnosci', en: 'privacy-policy' },
 };
 
 export const rawNavLinks: Record<Lang, { label: string; href: string }[]> = {

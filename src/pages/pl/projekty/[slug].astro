@@ -1,0 +1,67 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import PageHero from '../../../components/shared/PageHero.astro';
+import AnimateOnScroll from '../../../components/ui/AnimateOnScroll.astro';
+import SectionHeading from '../../../components/ui/SectionHeading.astro';
+import { getContent, url } from '../../../i18n/utils';
+
+const lang = 'pl' as const;
+const content = getContent(lang);
+
+export function getStaticPaths() {
+  const plContent = getContent('pl');
+  return plContent.projects.items.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+---
+<PageLayout lang={lang} title={`${project.title} - AI Machine`} description={project.shortDescription}>
+  <PageHero title={project.title} subtitle={project.shortDescription} image={project.image} />
+
+  <section class="py-20 bg-brand-darker">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Solutions heading -->
+      <AnimateOnScroll animation="fade-up" delay={200}>
+        <SectionHeading title="Zastosowane Rozwiązania" centered={false} />
+      </AnimateOnScroll>
+
+      <!-- Solutions grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        {project.solutions?.map((solution, index) => (
+          <AnimateOnScroll animation="fade-up" delay={index * 100}>
+            <div class="group rounded-2xl overflow-hidden bg-brand-card border border-white/5 hover:border-brand-teal/30 transition-all duration-300">
+              <!-- Solution image -->
+              <div class="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src={url(solution.image)}
+                  alt={solution.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.style.display='none'"
+                />
+              </div>
+              <!-- Solution content -->
+              <div class="p-6">
+                <h3 class="text-lg font-bold font-heading text-white mb-2">{solution.title}</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">{solution.description}</p>
+              </div>
+            </div>
+          </AnimateOnScroll>
+        ))}
+      </div>
+
+      <!-- Back link -->
+      <div class="mt-16 text-center">
+        <a href={url('/pl/')} class="inline-flex items-center text-brand-green hover:text-brand-teal transition-colors font-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+          </svg>
+          Wróć do strony głównej
+        </a>
+      </div>
+    </div>
+  </section>
+</PageLayout>

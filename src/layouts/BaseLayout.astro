@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { getAlternateUrl, url } from '../i18n/utils';
+import CookieBanner from '../components/shared/CookieBanner.astro';
 
 interface Props {
   lang: 'pl' | 'en';
@@ -32,6 +33,24 @@ const alternateEn = `${siteUrl}${getAlternateUrl(currentPath, 'en')}`;
 </head>
 <body class="min-h-screen overflow-x-hidden">
   <slot />
+  <CookieBanner lang={lang} />
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDhDoTOyXsk52wWJxQx-sMRQCNF3OnGzxQ",
+      authDomain: "aim-website-nvk.firebaseapp.com",
+      projectId: "aim-website-nvk",
+      storageBucket: "aim-website-nvk.firebasestorage.app",
+      messagingSenderId: "921706702112",
+      appId: "1:921706702112:web:6e341bbb1e4e6ce25f2345",
+      measurementId: "G-J2GRSPZK59",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    getAnalytics(app);
+  </script>
   <script>
     // Scroll animations
     const observerOptions: IntersectionObserverInit = {

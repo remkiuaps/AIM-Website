@@ -3,8 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://remkiuaps.github.io',
-  base: '/AIM-Website/',
+  site: 'https://aimachine.pl',
   trailingSlash: 'always',
   output: 'static',
   i18n: {

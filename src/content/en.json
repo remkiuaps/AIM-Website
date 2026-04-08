@@ -151,6 +151,163 @@
       }
     ]
   },
+  "projects": {
+    "sectionTitle": "Our Projects",
+    "items": [
+      {
+        "slug": "modern-warehouse",
+        "title": "Modern Warehouse",
+        "category": "Industrial",
+        "shortDescription": "Fully automated warehouse facility with integrated AMR fleet and intelligent management systems.",
+        "fullDescription": "A state-of-the-art warehouse facility featuring fully automated storage and retrieval systems, a fleet of autonomous mobile robots, and an integrated warehouse management system. This project showcases our ability to deliver end-to-end automation solutions.",
+        "image": "/images/projects/modern-warehouse.png",
+        "gallery": [
+          "/images/projects/modern-warehouse.png"
+        ],
+        "specs": {
+          "area": "5,000 m²",
+          "year": "2025",
+          "location": "Poland"
+        },
+        "solutions": [
+          {
+            "title": "Autonomous Mobile Robots (AMR)",
+            "description": "A fleet of autonomous mobile robots for transporting goods between warehouse zones, optimized for operational efficiency and safety.",
+            "image": "/images/projects/modern-warehouse-amr.png"
+          },
+          {
+            "title": "Warehouse Management System (WMS)",
+            "description": "An integrated WMS for real-time inventory tracking, automated order picking, and optimized goods placement across the facility.",
+            "image": "/images/projects/modern-warehouse-wms.png"
+          },
+          {
+            "title": "Intelligent Industrial Lighting",
+            "description": "Energy-efficient LED lighting system controlled by occupancy and daylight sensors, reducing energy consumption by 60%.",
+            "image": "/images/projects/modern-warehouse-lighting.png"
+          },
+          {
+            "title": "Facility Monitoring & Security",
+            "description": "Comprehensive surveillance system with IP cameras, access control, and threat detection, ensuring 24/7 facility security.",
+            "image": "/images/projects/modern-warehouse-security.png"
+          }
+        ]
+      },
+      {
+        "slug": "luxury-villa",
+        "title": "Luxury Villa",
+        "category": "Residential",
+        "shortDescription": "Premium smart home installation with full automation and intelligent building management.",
+        "fullDescription": "A luxury residential project featuring comprehensive smart home automation including lighting, climate, security, entertainment, and energy management systems. All controlled through an intuitive interface.",
+        "image": "/images/projects/luxury-villa.png",
+        "gallery": [
+          "/images/projects/luxury-villa.png"
+        ],
+        "specs": {
+          "area": "800 m²",
+          "year": "2025",
+          "location": "Poland"
+        },
+        "solutions": [
+          {
+            "title": "Intelligent Lighting & Shading",
+            "description": "Automated lighting and shading control with Basalte touch panels, lighting scenes, and schedules adapted to the time of day.",
+            "image": "/images/projects/luxury-villa-lighting.png"
+          },
+          {
+            "title": "Climate & Energy Management",
+            "description": "Zone-based climate control with heat pump, ventilation, and real-time energy monitoring via the Loxone system.",
+            "image": "/images/projects/luxury-villa-climate.png"
+          },
+          {
+            "title": "Multiroom Audio System",
+            "description": "Premium Basalte multiroom audio system with individual music source and volume selection in every room.",
+            "image": "/images/projects/luxury-villa-audio.png"
+          },
+          {
+            "title": "Security & Access Control",
+            "description": "Integrated alarm system with IP cameras, video intercom, and access control, all managed from your smartphone.",
+            "image": "/images/projects/luxury-villa-security.png"
+          }
+        ]
+      },
+      {
+        "slug": "business-hotel",
+        "title": "Business Hotel",
+        "category": "Commercial",
+        "shortDescription": "Smart hotel system with automated guest services and energy management.",
+        "fullDescription": "An intelligent hotel management system providing automated guest services, energy optimization, security surveillance, and smart room controls. Enhancing guest experience while reducing operational costs.",
+        "image": "/images/projects/business-hotel.png",
+        "gallery": [
+          "/images/projects/business-hotel.png"
+        ],
+        "specs": {
+          "area": "12,000 m²",
+          "year": "2024",
+          "location": "Poland"
+        },
+        "solutions": [
+          {
+            "title": "Intelligent Room Management",
+            "description": "Automated lighting, climate, and shading control in hotel rooms, activated by guest key cards.",
+            "image": "/images/projects/business-hotel-rooms.png"
+          },
+          {
+            "title": "Reception System & Access Control",
+            "description": "Integrated reception system with electronic locks, guest registration, and automated room assignment.",
+            "image": "/images/projects/business-hotel-reception.png"
+          },
+          {
+            "title": "Energy & Climate Management",
+            "description": "Centralized HVAC management with energy optimization based on room occupancy and outdoor conditions.",
+            "image": "/images/projects/business-hotel-energy.png"
+          },
+          {
+            "title": "Monitoring & Security",
+            "description": "Surveillance system with IP cameras, motion detection, and real-time alerts for comprehensive facility security.",
+            "image": "/images/projects/business-hotel-security.png"
+          }
+        ]
+      },
+      {
+        "slug": "office-complex",
+        "title": "Office Complex",
+        "category": "Commercial",
+        "shortDescription": "Intelligent building automation for a modern office complex.",
+        "fullDescription": "A comprehensive building automation project for a multi-story office complex, featuring intelligent HVAC, lighting, access control, and workspace management systems designed for maximum comfort and energy efficiency.",
+        "image": "/images/projects/office-complex.png",
+        "gallery": [
+          "/images/projects/office-complex.png"
+        ],
+        "specs": {
+          "area": "25,000 m²",
+          "year": "2024",
+          "location": "Poland"
+        },
+        "solutions": [
+          {
+            "title": "Building Management System (BMS)",
+            "description": "A central building management system integrating HVAC, lighting, and security into a single platform with visualization and reporting.",
+            "image": "/images/projects/office-complex-bms.png"
+          },
+          {
+            "title": "Intelligent Lighting & Climate",
+            "description": "Zone-based lighting and climate control with occupancy sensors, automatic adjustment to outdoor conditions, and user preferences.",
+            "image": "/images/projects/office-complex-lighting.png"
+          },
+          {
+            "title": "Access Control & Security",
+            "description": "Multi-level access control with key cards, biometrics, and video surveillance, ensuring security across the entire complex.",
+            "image": "/images/projects/office-complex-access.png"
+          },
+          {
+            "title": "Workspace Management",
+            "description": "Smart conference room booking, desk occupancy monitoring, and office space utilization optimization system.",
+            "image": "/images/projects/office-complex-workspace.png"
+          }
+        ]
+      }
+    ]
+  },
   "buildings": {
     "heroTitle": "Intelligent Buildings",
     "heroSubtitle": "Technology for Premium Living",
@@ -280,7 +437,8 @@
         "links": [
           { "label": "About Us", "href": "/en/about/" },
 
-          { "label": "Contact", "href": "/en/contact/" }
+          { "label": "Contact", "href": "/en/contact/" },
+          { "label": "Privacy Policy", "href": "/en/privacy-policy/" }
         ]
       },
       {
@@ -306,5 +464,13 @@
     },
     "copyright": "© 2026 AI Machine. All rights reserved.",
     "tagline": "The Future of Automation"
+  },
+  "cookieBanner": {
+    "message": "This website uses cookies to ensure the best experience and to analyze traffic. By using this site, you agree to their use in accordance with our",
+    "policyLinkLabel": "Privacy Policy",
+    "policyHref": "/en/privacy-policy/",
+    "accept": "Accept",
+    "decline": "Decline",
+    "ariaLabel": "Cookie notice"
   }
 }

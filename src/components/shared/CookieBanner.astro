@@ -1,0 +1,84 @@
+---
+import type { Lang } from '../../i18n/config';
+import { getContent, url } from '../../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const content = getContent(lang);
+const cookie = (content as any).cookieBanner;
+const policyHref = url(cookie.policyHref);
+---
+<div
+  id="cookie-banner"
+  role="dialog"
+  aria-live="polite"
+  aria-label={cookie.ariaLabel}
+  class="fixed bottom-0 left-0 right-0 z-[100] hidden px-4 pb-4 sm:px-6 sm:pb-6"
+>
+  <div class="mx-auto max-w-5xl rounded-2xl border border-white/10 bg-brand-darker/95 backdrop-blur-md shadow-2xl shadow-black/40">
+    <div class="flex flex-col gap-4 p-5 sm:p-6 md:flex-row md:items-center md:justify-between md:gap-6">
+      <p class="text-sm leading-relaxed text-gray-300 md:max-w-3xl">
+        {cookie.message}{' '}
+        <a
+          href={policyHref}
+          class="text-brand-green underline underline-offset-2 hover:text-brand-green/80 transition-colors"
+        >
+          {cookie.policyLinkLabel}
+        </a>.
+      </p>
+      <div class="flex flex-shrink-0 flex-col gap-2 sm:flex-row sm:gap-3">
+        <button
+          type="button"
+          id="cookie-decline"
+          class="px-5 py-2.5 text-sm font-semibold text-gray-300 rounded border border-white/15 hover:border-white/30 hover:text-white transition-all duration-200"
+        >
+          {cookie.decline}
+        </button>
+        <button
+          type="button"
+          id="cookie-accept"
+          class="px-5 py-2.5 text-sm font-semibold text-white rounded gradient-brand gradient-brand-hover transition-all duration-300 hover:shadow-xl hover:shadow-brand-green/20 hover:-translate-y-0.5"
+        >
+          {cookie.accept}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const STORAGE_KEY = 'aim-cookie-consent';
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const declineBtn = document.getElementById('cookie-decline');
+
+    if (!banner || !acceptBtn || !declineBtn) return;
+
+    let stored: string | null = null;
+    try {
+      stored = localStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      // localStorage may be unavailable (private mode); show banner anyway
+    }
+
+    if (!stored) {
+      banner.classList.remove('hidden');
+    }
+
+    const persist = (value: 'accepted' | 'declined') => {
+      try {
+        localStorage.setItem(STORAGE_KEY, value);
+      } catch (e) {
+        // ignore
+      }
+      banner.classList.add('hidden');
+    };
+
+    acceptBtn.addEventListener('click', () => persist('accepted'));
+    declineBtn.addEventListener('click', () => persist('declined'));
+  })();
+</script>

@@ -151,6 +151,163 @@
       }
     ]
   },
+  "projects": {
+    "sectionTitle": "Nasze Projekty",
+    "items": [
+      {
+        "slug": "modern-warehouse",
+        "title": "Nowoczesny Magazyn",
+        "category": "Przemysłowy",
+        "shortDescription": "W pełni zautomatyzowany obiekt magazynowy ze zintegrowaną flotą AMR i inteligentnymi systemami zarządzania.",
+        "fullDescription": "Najnowocześniejszy obiekt magazynowy wyposażony w w pełni zautomatyzowane systemy składowania i pobierania, flotę autonomicznych robotów mobilnych oraz zintegrowany system zarządzania magazynem. Projekt ten prezentuje naszą zdolność do dostarczania kompleksowych rozwiązań automatyzacji.",
+        "image": "/images/projects/modern-warehouse.png",
+        "gallery": [
+          "/images/projects/modern-warehouse.png"
+        ],
+        "specs": {
+          "area": "5 000 m²",
+          "year": "2025",
+          "location": "Polska"
+        },
+        "solutions": [
+          {
+            "title": "Autonomiczne Roboty Mobilne (AMR)",
+            "description": "Flota autonomicznych robotów mobilnych do transportu towarów między strefami magazynowymi, zoptymalizowana pod kątem wydajności i bezpieczeństwa operacji.",
+            "image": "/images/projects/modern-warehouse-amr.png"
+          },
+          {
+            "title": "System Zarządzania Magazynem (WMS)",
+            "description": "Zintegrowany system WMS do śledzenia zapasów w czasie rzeczywistym, automatycznego kompletowania zamówień i optymalizacji rozmieszczenia towarów.",
+            "image": "/images/projects/modern-warehouse-wms.png"
+          },
+          {
+            "title": "Inteligentne Oświetlenie Przemysłowe",
+            "description": "Energooszczędny system oświetlenia LED sterowany czujnikami obecności i natężenia światła dziennego, redukujący zużycie energii o 60%.",
+            "image": "/images/projects/modern-warehouse-lighting.png"
+          },
+          {
+            "title": "Monitoring i Bezpieczeństwo Obiektu",
+            "description": "Kompleksowy system monitoringu z kamerami IP, kontrolą dostępu i detekcją zagrożeń, zapewniający pełne bezpieczeństwo obiektu 24/7.",
+            "image": "/images/projects/modern-warehouse-security.png"
+          }
+        ]
+      },
+      {
+        "slug": "luxury-villa",
+        "title": "Luksusowa Willa",
+        "category": "Rezydencjalny",
+        "shortDescription": "Premiumowa instalacja inteligentnego domu z pełną automatyzacją i zarządzaniem budynkiem.",
+        "fullDescription": "Luksusowy projekt rezydencjalny obejmujący kompleksową automatyzację inteligentnego domu, w tym systemy oświetlenia, klimatyzacji, bezpieczeństwa, rozrywki i zarządzania energią. Wszystko kontrolowane przez intuicyjny interfejs.",
+        "image": "/images/projects/luxury-villa.png",
+        "gallery": [
+          "/images/projects/luxury-villa.png"
+        ],
+        "specs": {
+          "area": "800 m²",
+          "year": "2025",
+          "location": "Polska"
+        },
+        "solutions": [
+          {
+            "title": "Inteligentne Oświetlenie i Rolety",
+            "description": "System automatycznego sterowania oświetleniem i roletami z panelami dotykowymi Basalte, scenami świetlnymi i harmonogramami dostosowanymi do pory dnia.",
+            "image": "/images/projects/luxury-villa-lighting.png"
+          },
+          {
+            "title": "Klimatyzacja i Zarządzanie Energią",
+            "description": "Strefowe sterowanie klimatem z pompą ciepła, rekuperacją i monitoringiem zużycia energii w czasie rzeczywistym przez system Loxone.",
+            "image": "/images/projects/luxury-villa-climate.png"
+          },
+          {
+            "title": "System Audio Multiroom",
+            "description": "Wysokiej jakości system audio multiroom Basalte z indywidualnym wyborem źródeł muzyki i głośności w każdym pomieszczeniu.",
+            "image": "/images/projects/luxury-villa-audio.png"
+          },
+          {
+            "title": "Bezpieczeństwo i Kontrola Dostępu",
+            "description": "Zintegrowany system alarmowy z kamerami IP, wideodomofonem i kontrolą dostępu, sterowany z poziomu smartfona.",
+            "image": "/images/projects/luxury-villa-security.png"
+          }
+        ]
+      },
+      {
+        "slug": "business-hotel",
+        "title": "Hotel Biznesowy",
+        "category": "Komercyjny",
+        "shortDescription": "Inteligentny system hotelowy z automatyczną obsługą gości i zarządzaniem energią.",
+        "fullDescription": "Inteligentny system zarządzania hotelem zapewniający automatyczną obsługę gości, optymalizację energii, monitoring bezpieczeństwa i inteligentne sterowanie pokojami. Poprawiamy doświadczenie gości, jednocześnie redukując koszty operacyjne.",
+        "image": "/images/projects/business-hotel.png",
+        "gallery": [
+          "/images/projects/business-hotel.png"
+        ],
+        "specs": {
+          "area": "12 000 m²",
+          "year": "2024",
+          "location": "Polska"
+        },
+        "solutions": [
+          {
+            "title": "Inteligentne Zarządzanie Pokojami",
+            "description": "System automatycznego sterowania oświetleniem, klimatem i roletami w pokojach hotelowych, aktywowany kartą gościa.",
+            "image": "/images/projects/business-hotel-rooms.png"
+          },
+          {
+            "title": "System Recepcyjny i Kontrola Dostępu",
+            "description": "Zintegrowany system recepcyjny z elektronicznymi zamkami, rejestracją gości i automatycznym przydzielaniem pokoi.",
+            "image": "/images/projects/business-hotel-reception.png"
+          },
+          {
+            "title": "Zarządzanie Energią i Klimatem",
+            "description": "Centralne zarządzanie HVAC z optymalizacją zużycia energii w zależności od obłożenia pokoi i warunków zewnętrznych.",
+            "image": "/images/projects/business-hotel-energy.png"
+          },
+          {
+            "title": "Monitoring i Bezpieczeństwo",
+            "description": "System monitoringu z kamerami IP, detekcją ruchu i alertami w czasie rzeczywistym dla pełnego bezpieczeństwa obiektu.",
+            "image": "/images/projects/business-hotel-security.png"
+          }
+        ]
+      },
+      {
+        "slug": "office-complex",
+        "title": "Kompleks Biurowy",
+        "category": "Komercyjny",
+        "shortDescription": "Inteligentna automatyka budynkowa dla nowoczesnego kompleksu biurowego.",
+        "fullDescription": "Kompleksowy projekt automatyki budynkowej dla wielopiętrowego kompleksu biurowego, obejmujący inteligentne systemy HVAC, oświetlenia, kontroli dostępu i zarządzania przestrzenią roboczą, zaprojektowane dla maksymalnego komfortu i efektywności energetycznej.",
+        "image": "/images/projects/office-complex.png",
+        "gallery": [
+          "/images/projects/office-complex.png"
+        ],
+        "specs": {
+          "area": "25 000 m²",
+          "year": "2024",
+          "location": "Polska"
+        },
+        "solutions": [
+          {
+            "title": "Automatyka Budynkowa BMS",
+            "description": "Centralny system zarządzania budynkiem integrujący HVAC, oświetlenie i bezpieczeństwo w jednej platformie z wizualizacją i raportami.",
+            "image": "/images/projects/office-complex-bms.png"
+          },
+          {
+            "title": "Inteligentne Oświetlenie i Klimat",
+            "description": "Strefowe sterowanie oświetleniem i klimatem z czujnikami obecności, automatycznym dostosowaniem do warunków zewnętrznych i preferencji użytkowników.",
+            "image": "/images/projects/office-complex-lighting.png"
+          },
+          {
+            "title": "Kontrola Dostępu i Bezpieczeństwo",
+            "description": "Wielopoziomowy system kontroli dostępu z kartami, biometrią i monitoringiem wideo, zapewniający bezpieczeństwo całego kompleksu.",
+            "image": "/images/projects/office-complex-access.png"
+          },
+          {
+            "title": "Zarządzanie Przestrzenią Roboczą",
+            "description": "Inteligentny system rezerwacji sal konferencyjnych, monitoringu zajętości biurek i optymalizacji wykorzystania przestrzeni biurowej.",
+            "image": "/images/projects/office-complex-workspace.png"
+          }
+        ]
+      }
+    ]
+  },
   "buildings": {
     "heroTitle": "Inteligentne Budynki",
     "heroSubtitle": "Technologia dla Komfortowego Życia",
@@ -286,6 +443,10 @@
           {
             "label": "Kontakt",
             "href": "/pl/kontakt/"
+          },
+          {
+            "label": "Polityka Prywatności",
+            "href": "/pl/polityka-prywatnosci/"
           }
         ]
       },
@@ -324,5 +485,13 @@
     },
     "copyright": "© 2026 AI Machine. Wszelkie prawa zastrzeżone.",
     "tagline": "Przyszłość Automatyzacji"
+  },
+  "cookieBanner": {
+    "message": "Ta strona używa plików cookie, aby zapewnić najlepsze doświadczenia oraz analizować ruch. Korzystając z witryny, wyrażasz zgodę na ich używanie zgodnie z naszą",
+    "policyLinkLabel": "Polityką Prywatności",
+    "policyHref": "/pl/polityka-prywatnosci/",
+    "accept": "Akceptuję",
+    "decline": "Odrzuć",
+    "ariaLabel": "Komunikat o plikach cookie"
   }
 }

@@ -1,0 +1,108 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import PageHero from '../../components/shared/PageHero.astro';
+import AnimateOnScroll from '../../components/ui/AnimateOnScroll.astro';
+
+const lang = 'en' as const;
+---
+<PageLayout lang={lang} title="Privacy Policy - AI Machine">
+  <PageHero title="Privacy Policy" subtitle="AI Machine Sp. z o.o." />
+
+  <section class="py-20 bg-brand-darker">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <AnimateOnScroll animation="fade-up">
+        <div class="prose prose-invert prose-gray max-w-none space-y-12 text-gray-300 leading-relaxed">
+
+          <p class="text-sm text-gray-500">Last updated: March 24, 2026</p>
+
+          <!-- 1 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">1. Data Controller</h2>
+            <p>The controller of personal data is:</p>
+            <ul class="list-none space-y-1 mt-3">
+              <li><strong class="text-white">AI Machine Sp. z o.o.</strong></li>
+              <li>Registered address: Korczunkowa 20, 05-503 Głosków, Poland</li>
+              <li>Tax ID (NIP): 1231591131</li>
+              <li>National Court Register (KRS): 0001203465</li>
+              <li>Registry court: District Court for the Capital City of Warsaw, 14th Commercial Division of the National Court Register</li>
+              <li>Share capital: PLN 100,000</li>
+              <li>Email: <a href="mailto:info@aimachine.pl" class="text-brand-green hover:underline">info@aimachine.pl</a></li>
+              <li>Phone: <a href="tel:+48736288285" class="text-brand-green hover:underline">+48 736 288 285</a></li>
+            </ul>
+          </div>
+
+          <!-- 2 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">2. What Data We Collect and Why</h2>
+            <h3 class="text-lg font-semibold text-white mb-2">2.1 Contact Form</h3>
+            <p>Through the contact form available at <a href="https://aimachine.pl" class="text-brand-green hover:underline">aimachine.pl</a>, we collect the following personal data:</p>
+            <ul class="list-disc list-inside space-y-1 mt-3 ml-4">
+              <li>first and last name</li>
+              <li>email address</li>
+              <li>company name</li>
+              <li>message content</li>
+            </ul>
+            <p class="mt-4">We process this data solely for the purpose of:</p>
+            <ul class="list-disc list-inside space-y-1 mt-3 ml-4">
+              <li>responding to submitted contact or business inquiries,</li>
+              <li>taking steps necessary to conclude a contract at the request of the data subject.</li>
+            </ul>
+          </div>
+
+          <!-- 3 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">3. Legal Basis for Data Processing</h2>
+            <p>We process personal data on the basis of:</p>
+            <ul class="list-disc list-inside space-y-2 mt-3 ml-4">
+              <li><strong class="text-white">Art. 6(1)(b) GDPR</strong> — processing is necessary for the performance of steps at the request of the data subject prior to entering into a contract (for inquiries about our services);</li>
+              <li><strong class="text-white">Art. 6(1)(f) GDPR</strong> — the legitimate interest of the controller, consisting in the ability to conduct business correspondence and respond to inquiries.</li>
+            </ul>
+          </div>
+
+          <!-- 4 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">4. Data Retention Period</h2>
+            <p>Personal data collected through the contact form will be stored for a period of <strong class="text-white">3 years from the last contact</strong>, unless legal provisions require a longer retention period or the conclusion of a contract requires a different period.</p>
+            <p class="mt-3">After this period, the data will be permanently deleted or anonymized.</p>
+          </div>
+
+          <!-- 5 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">5. Rights of the Data Subject</h2>
+            <p>In accordance with the GDPR, you have the following rights:</p>
+            <ul class="list-disc list-inside space-y-2 mt-3 ml-4">
+              <li><strong class="text-white">Right of access</strong> — you may request information about the personal data being processed (Art. 15 GDPR);</li>
+              <li><strong class="text-white">Right to rectification</strong> — you may request correction of inaccurate or completion of incomplete data (Art. 16 GDPR);</li>
+              <li><strong class="text-white">Right to erasure</strong> — you may request deletion of data in certain cases (Art. 17 GDPR);</li>
+              <li><strong class="text-white">Right to restriction of processing</strong> — you may request restriction of data processing (Art. 18 GDPR);</li>
+              <li><strong class="text-white">Right to data portability</strong> — you may receive your data in a structured format (Art. 20 GDPR);</li>
+              <li><strong class="text-white">Right to object</strong> — you may object at any time to the processing of data based on the legitimate interest of the controller (Art. 21 GDPR);</li>
+              <li><strong class="text-white">Right to withdraw consent</strong> — if processing is based on consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before the withdrawal;</li>
+              <li><strong class="text-white">Right to lodge a complaint</strong> — you may file a complaint with the supervisory authority: the President of the Personal Data Protection Office (UODO), ul. Stawki 2, 00-193 Warsaw, Poland, <a href="https://www.uodo.gov.pl" class="text-brand-green hover:underline" target="_blank" rel="noopener noreferrer">www.uodo.gov.pl</a>.</li>
+            </ul>
+            <p class="mt-4">To exercise the above rights, please contact us at: <a href="mailto:info@aimachine.pl" class="text-brand-green hover:underline">info@aimachine.pl</a></p>
+          </div>
+
+          <!-- 6 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">6. Data Recipients</h2>
+            <p>Personal data may be transferred to the following categories of recipients:</p>
+            <ul class="list-disc list-inside space-y-1 mt-3 ml-4">
+              <li>hosting and technical service providers supporting the website;</li>
+              <li>email service providers.</li>
+            </ul>
+            <p class="mt-4">Data is not transferred to third countries outside the European Economic Area, unless this is done on the basis of appropriate legal safeguards required by the GDPR.</p>
+          </div>
+
+          <!-- 7 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">7. Changes to the Privacy Policy</h2>
+            <p>We reserve the right to amend this Privacy Policy. Any changes will be published on this page with a new update date. In the event of significant changes, we will notify users by email or through a visible notice on the website.</p>
+            <p class="mt-4">This Privacy Policy is effective as of <strong class="text-white">March 24, 2026</strong>.</p>
+          </div>
+
+        </div>
+      </AnimateOnScroll>
+    </div>
+  </section>
+</PageLayout>

@@ -1,0 +1,108 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import PageHero from '../../components/shared/PageHero.astro';
+import AnimateOnScroll from '../../components/ui/AnimateOnScroll.astro';
+
+const lang = 'pl' as const;
+---
+<PageLayout lang={lang} title="Polityka Prywatności - AI Machine">
+  <PageHero title="Polityka Prywatności" subtitle="AI Machine Sp. z o.o." />
+
+  <section class="py-20 bg-brand-darker">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <AnimateOnScroll animation="fade-up">
+        <div class="prose prose-invert prose-gray max-w-none space-y-12 text-gray-300 leading-relaxed">
+
+          <p class="text-sm text-gray-500">Data ostatniej aktualizacji: 24 marca 2026 r.</p>
+
+          <!-- 1 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">1. Administrator danych osobowych</h2>
+            <p>Administratorem danych osobowych jest:</p>
+            <ul class="list-none space-y-1 mt-3">
+              <li><strong class="text-white">AI Machine Sp. z o.o.</strong></li>
+              <li>Adres siedziby: Korczunkowa 20, 05-503 Głosków, Polska</li>
+              <li>NIP: 1231591131</li>
+              <li>KRS: 0001203465</li>
+              <li>Sąd rejestrowy: Sąd Rejonowy dla m.st. Warszawy, XIV Wydział Gospodarczy KRS</li>
+              <li>Wysokość kapitału zakładowego: 100 000 zł</li>
+              <li>E-mail: <a href="mailto:info@aimachine.pl" class="text-brand-green hover:underline">info@aimachine.pl</a></li>
+              <li>Telefon: <a href="tel:+48736288285" class="text-brand-green hover:underline">+48 736 288 285</a></li>
+            </ul>
+          </div>
+
+          <!-- 2 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">2. Jakie dane zbieramy i w jakim celu</h2>
+            <h3 class="text-lg font-semibold text-white mb-2">2.1 Formularz kontaktowy</h3>
+            <p>Za pośrednictwem formularza kontaktowego dostępnego na stronie <a href="https://aimachine.pl" class="text-brand-green hover:underline">aimachine.pl</a> zbieramy następujące dane osobowe:</p>
+            <ul class="list-disc list-inside space-y-1 mt-3 ml-4">
+              <li>imię i nazwisko</li>
+              <li>adres e-mail</li>
+              <li>nazwa firmy</li>
+              <li>treść wiadomości</li>
+            </ul>
+            <p class="mt-4">Dane te przetwarzamy wyłącznie w celu:</p>
+            <ul class="list-disc list-inside space-y-1 mt-3 ml-4">
+              <li>udzielenia odpowiedzi na przesłane zapytanie kontaktowe lub handlowe,</li>
+              <li>podjęcia działań niezbędnych do zawarcia umowy na życzenie osoby, której dane dotyczą.</li>
+            </ul>
+          </div>
+
+          <!-- 3 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">3. Podstawa prawna przetwarzania danych</h2>
+            <p>Dane osobowe przetwarzamy na podstawie:</p>
+            <ul class="list-disc list-inside space-y-2 mt-3 ml-4">
+              <li><strong class="text-white">art. 6 ust. 1 lit. b RODO</strong> — przetwarzanie jest niezbędne do podjęcia działań na żądanie osoby, której dane dotyczą, przed zawarciem umowy (w przypadku zapytań o nasze usługi);</li>
+              <li><strong class="text-white">art. 6 ust. 1 lit. f RODO</strong> — uzasadniony interes administratora, polegający na możliwości prowadzenia korespondencji biznesowej i udzielaniu odpowiedzi na zapytania.</li>
+            </ul>
+          </div>
+
+          <!-- 4 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">4. Okres przechowywania danych</h2>
+            <p>Dane osobowe zbierane za pośrednictwem formularza kontaktowego będą przechowywane przez okres <strong class="text-white">3 lat od ostatniego kontaktu</strong>, chyba że przepisy prawa wymagają dłuższego okresu przechowywania lub zawarcie umowy wymaga innego okresu.</p>
+            <p class="mt-3">Po upływie tego okresu dane zostaną trwale usunięte lub zanonimizowane.</p>
+          </div>
+
+          <!-- 5 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">5. Prawa osoby, której dane dotyczą</h2>
+            <p>Zgodnie z RODO przysługują Państwu następujące prawa:</p>
+            <ul class="list-disc list-inside space-y-2 mt-3 ml-4">
+              <li><strong class="text-white">Prawo dostępu</strong> — mogą Państwo zażądać informacji o przetwarzanych danych osobowych (art. 15 RODO);</li>
+              <li><strong class="text-white">Prawo do sprostowania</strong> — mogą Państwo żądać poprawienia nieprawidłowych lub uzupełnienia niekompletnych danych (art. 16 RODO);</li>
+              <li><strong class="text-white">Prawo do usunięcia</strong> — mogą Państwo żądać usunięcia danych w określonych przypadkach (art. 17 RODO);</li>
+              <li><strong class="text-white">Prawo do ograniczenia przetwarzania</strong> — mogą Państwo żądać ograniczenia przetwarzania danych (art. 18 RODO);</li>
+              <li><strong class="text-white">Prawo do przenoszenia danych</strong> — mogą Państwo otrzymać dane w ustrukturyzowanym formacie (art. 20 RODO);</li>
+              <li><strong class="text-white">Prawo do sprzeciwu</strong> — mogą Państwo w dowolnym momencie wnieść sprzeciw wobec przetwarzania danych opartego na uzasadnionym interesie administratora (art. 21 RODO);</li>
+              <li><strong class="text-white">Prawo do cofnięcia zgody</strong> — jeśli przetwarzanie opiera się na zgodzie, mogą ją Państwo cofnąć w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania przed cofnięciem;</li>
+              <li><strong class="text-white">Prawo do skargi</strong> — mogą Państwo wnieść skargę do organu nadzorczego: Prezesa Urzędu Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa, <a href="https://www.uodo.gov.pl" class="text-brand-green hover:underline" target="_blank" rel="noopener noreferrer">www.uodo.gov.pl</a>.</li>
+            </ul>
+            <p class="mt-4">Aby skorzystać z powyższych praw, prosimy o kontakt pod adresem: <a href="mailto:info@aimachine.pl" class="text-brand-green hover:underline">info@aimachine.pl</a></p>
+          </div>
+
+          <!-- 6 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">6. Odbiorcy danych</h2>
+            <p>Dane osobowe mogą być przekazywane następującym kategoriom odbiorców:</p>
+            <ul class="list-disc list-inside space-y-1 mt-3 ml-4">
+              <li>dostawcy usług hostingowych i technicznych obsługujących stronę internetową;</li>
+              <li>dostawcy narzędzi do obsługi poczty elektronicznej.</li>
+            </ul>
+            <p class="mt-4">Dane nie są przekazywane do państw trzecich poza Europejski Obszar Gospodarczy, chyba że odbywa się to na podstawie odpowiednich zabezpieczeń prawnych wymaganych przez RODO.</p>
+          </div>
+
+          <!-- 7 -->
+          <div>
+            <h2 class="text-2xl font-bold font-heading text-white mb-4">7. Zmiany Polityki Prywatności</h2>
+            <p>Zastrzegamy sobie prawo do zmiany niniejszej Polityki Prywatności. Wszelkie zmiany będą publikowane na niniejszej stronie z nową datą aktualizacji. W przypadku istotnych zmian poinformujemy użytkowników drogą e-mailową lub poprzez widoczny komunikat na stronie.</p>
+            <p class="mt-4">Niniejsza Polityka Prywatności obowiązuje od dnia <strong class="text-white">24 marca 2026 r.</strong></p>
+          </div>
+
+        </div>
+      </AnimateOnScroll>
+    </div>
+  </section>
+</PageLayout>
